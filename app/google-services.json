@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "763868108928",
+    "firebase_url": "https://chardee-macdennis-b9e82.firebaseio.com",
+    "project_id": "chardee-macdennis-b9e82",
+    "storage_bucket": "chardee-macdennis-b9e82.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:763868108928:android:bb18c4427987d840",
+        "android_client_info": {
+          "package_name": "com.game.jason.chardeemacdennis20170417"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "763868108928-l5bkhmt794r2i7brokobko7mhsug2eti.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.game.jason.chardeemacdennis20170417",
+            "certificate_hash": "9a26eaa2248b60cab95105f9a4468aab748fadfa"
+          }
+        },
+        {
+          "client_id": "763868108928-jagiilntaqhnvhsa4g7mq37ael73f3jc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAis5oz4fm6AxVZ9KLjQn4VCogcUsFvgu4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "763868108928-jagiilntaqhnvhsa4g7mq37ael73f3jc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
