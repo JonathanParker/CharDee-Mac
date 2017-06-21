@@ -39,6 +39,7 @@ public class CardActivity extends AppCompatActivity {
     String teamThatsUp;
     int playerNumber;
     int teamScore;
+    Boolean gameHasStarted;
     String enabledDeck;
     private Intent goToDeck;
     private  Intent goToMain;
@@ -118,10 +119,12 @@ public class CardActivity extends AppCompatActivity {
             }
         });
 
-        if(blueScore == 0 && redScore == 0) {
+        if(!gameHasStarted) {
             RelativeLayout turnExpRL = (RelativeLayout) findViewById(R.id.try_swiping_container_RL);
             turnExpRL.setVisibility(View.VISIBLE);
         }
+
+        gameHasStarted = true;
     }
 
     public void setVariables() {
@@ -134,6 +137,7 @@ public class CardActivity extends AppCompatActivity {
         playerNumber = this.getIntent().getIntExtra("playerNumber",0);
         blueScore = getIntent().getIntExtra("blueScore",0);
         redScore = getIntent().getIntExtra("redScore",0);
+        gameHasStarted = getIntent().getBooleanExtra("gameHasStarted", false);
     }
     public void onAutoAdvanceClick(View view) {
 
@@ -355,6 +359,7 @@ public class CardActivity extends AppCompatActivity {
         intent.putExtra("blueScore", blueScore);
         intent.putExtra("redScore", redScore);
         intent.putExtra("continueMusic", continueMusic);
+        intent.putExtra("gameHasStarted", gameHasStarted);
     }
 
 }

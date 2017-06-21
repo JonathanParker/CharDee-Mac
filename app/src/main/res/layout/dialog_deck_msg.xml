@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:padding="5dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:text="@string/deck_msg_title"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:drawableBottom="@color/light_gray"/>
+
+
+            <TextView
+                android:id="@+id/judge"
+                android:buttonTint="@color/light_gray"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:paddingTop="10dp"
+                android:text="Pick a Judge"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/judgeSub0"
+                android:buttonTint="@color/light_gray"
+                android:textColor="@color/light_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/judge_sub0"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/judgeSub1"
+                android:buttonTint="@color/light_gray"
+                android:textColor="@color/light_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/judge_sub1"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/judgeSub2"
+                android:buttonTint="@color/light_gray"
+                android:textColor="@color/light_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/judge_sub2"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/judgeSub3"
+                android:buttonTint="@color/light_gray"
+                android:textColor="@color/light_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/judge_sub3"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/spit_team"
+                android:buttonTint="@color/light_gray"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:paddingTop="10dp"
+                android:text="@string/splitTeam"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/splitSub1"
+                android:buttonTint="@color/light_gray"
+                android:textColor="@color/light_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/splitTeam_sub1"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

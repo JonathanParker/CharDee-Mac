@@ -12,8 +12,13 @@
     <string name="key_pref_music_volume">preference music volume</string>
     <string name="full_game">Full</string>
     <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
-
-
+    <string name="judge_sub1">- reads cards</string>
+    <string name="judge_sub2">- decides card winners</string>
+    <string name="judge_sub3">- final say on everything</string>
+    <string name="splitTeam_sub1">- good friends should be split</string>
+    <string name="splitTeam">Split into two teams</string>
+    <string name="judge_sub0">- ONLY ONE HOLDING THE PHONE</string>
+    <string name="deck_msg_title">Few More Things…</string>
 
 
     <string-array name="mind_deck_title">

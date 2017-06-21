@@ -40,6 +40,7 @@ public class DeckActivity extends AppCompatActivity {
     String enabledDeck;
     Intent goToCards;
     public Boolean continueMusic;
+    Boolean gameHasStarted;
     ImageButton mindDeckButton;
     ImageButton bodyDeckButton;
     ImageButton spiritDeckButton;
@@ -95,10 +96,11 @@ public class DeckActivity extends AppCompatActivity {
             spiritDeckButton.setAlpha(1f);
         }
 
-        if(blueScore == 0 && redScore == 0) {
+        if(!gameHasStarted) {
             RelativeLayout turnExpRL = (RelativeLayout) findViewById(R.id.turn_exp_RL);
             turnExpRL.setVisibility(View.VISIBLE);
         }
+
     }
 
     public void setUpContext() {
@@ -109,7 +111,8 @@ public class DeckActivity extends AppCompatActivity {
         blueScore = this.getIntent().getIntExtra("blueScore",0);
         redScore = this.getIntent().getIntExtra("redScore",0);
         teamThatsUp = this.getIntent().getStringExtra("teamThatsUp");
-        playerNumber = this.getIntent().getIntExtra("playerNumber",0);
+        playerNumber = this.getIntent().getIntExtra("playerNumber",4);
+        gameHasStarted = this.getIntent().getBooleanExtra("gameHasStarted", false);
         enabledDeck = "mindDeck";
     }
 
@@ -149,6 +152,7 @@ public class DeckActivity extends AppCompatActivity {
         intent.putExtra("blueScore", blueScore);
         intent.putExtra("redScore", redScore);
         intent.putExtra("continueMusic", continueMusic);
+        intent.putExtra("gameHasStarted",gameHasStarted);
     }
 
     public void onMindDeckClick(View view) {
