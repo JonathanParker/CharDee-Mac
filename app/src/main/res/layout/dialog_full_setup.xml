@@ -348,11 +348,11 @@
                 android:textSize="20sp" />
 
             <Button
-                android:id="@+id/start_button_setup"
+                android:id="@+id/next_button_setup"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="onStartGameClick"
-                android:text="Start Game" />
+                android:onClick="onPickJudgeClick"
+                android:text="Next" />
 
 
         </LinearLayout>

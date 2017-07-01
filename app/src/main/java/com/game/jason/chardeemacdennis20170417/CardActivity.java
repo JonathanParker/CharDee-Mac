@@ -3,21 +3,22 @@ package com.game.jason.chardeemacdennis20170417;
 import android.content.Context;
 import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
+/*use for adding card add functionality*/
+//import android.widget.EditText;
+//import android.widget.Toast;
+//import android.widget.RadioButton;
+//import android.widget.RadioGroup;
+//import android.support.v7.app.AlertDialog;
 
 import com.bumptech.glide.Glide;
 import com.lorentzos.flingswipe.SwipeFlingAdapterView;
@@ -44,10 +45,11 @@ public class CardActivity extends AppCompatActivity {
     private Intent goToDeck;
     private  Intent goToMain;
     public Boolean continueMusic = true;
-    EditText title;
-    EditText description;
-    EditText imageURL;
-    RadioGroup deckTypeRGroup;
+    /*use for adding card add functionality*/
+//    EditText title;
+//    EditText description;
+//    EditText imageURL;
+//    RadioGroup deckTypeRGroup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -1,6 +1,5 @@
 package com.game.jason.chardeemacdennis20170417;
 
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -11,29 +10,18 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.ListAdapter;
-import android.widget.ListView;
 import android.widget.NumberPicker;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.w3c.dom.Document;
-import org.w3c.dom.NodeList;
-
-import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.List;
-
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -255,7 +243,7 @@ public class MainActivity extends AppCompatActivity {
         playerNumberEdit = (NumberPicker) findViewById(R.id.player_NP);
         playerNumberValue = String.valueOf(playerNumberEdit.getValue());
         AlertDialog.Builder mBuilder = new AlertDialog.Builder(MainActivity.this);
-        View mView = getLayoutInflater().inflate(R.layout.dialog_lite_setup,null);
+        View mView = getLayoutInflater().inflate(R.layout.dialog_pregame_setup_lite,null);
         mBuilder.setView(mView);
         AlertDialog dialog = mBuilder.create();
         dialog.show();
@@ -438,6 +426,13 @@ public class MainActivity extends AppCompatActivity {
         dialog.show();
     }
 
+    public void onPickJudgeClick(View view) {
+        AlertDialog.Builder mBuilder = new AlertDialog.Builder(MainActivity.this);
+        View mView = getLayoutInflater().inflate(R.layout.dialog_pick_judge,null);
+        mBuilder.setView(mView);
+        AlertDialog dialog = mBuilder.create();
+        dialog.show();
+    }
     public void onShowCreditClick(View view) {
 
         AlertDialog.Builder builderSingle = new AlertDialog.Builder(MainActivity.this);
