@@ -44,9 +44,9 @@ public class DeckActivity extends AppCompatActivity {
     ImageButton mindDeckButton;
     ImageButton bodyDeckButton;
     ImageButton spiritDeckButton;
-    static final int REQUEST_IMAGE_CAPTURE = 1;
-    private static final int REQUEST_CAMERA = 1;
-    private static final int SELECT_FILE = 2;
+//    static final int REQUEST_IMAGE_CAPTURE = 1;
+//    private static final int REQUEST_CAMERA = 1;
+//    private static final int SELECT_FILE = 2;
 
     private AdView mAdView;
 
@@ -91,6 +91,7 @@ public class DeckActivity extends AppCompatActivity {
             Intent goToWin = new Intent(this, WinActivity.class);
             setUpToGoToNextActivity(goToWin);
             startActivity(goToWin);
+            finish();
         } else if (teamScore <  playerNumber*3+6 ) {
             enabledDeck = "spiritDeck";
             spiritDeckButton.setAlpha(1f);
@@ -160,6 +161,7 @@ public class DeckActivity extends AppCompatActivity {
 
         if(enabledDeck.equals("mindDeck")) {
             startActivity(goToCards);
+            finish();
         } else {
             Toast.makeText(DeckActivity.this,
                     "You are no longer in level 1: Mind",
@@ -172,9 +174,10 @@ public class DeckActivity extends AppCompatActivity {
 
         if(enabledDeck.equals("bodyDeck")) {
             startActivity(goToCards);
+            finish();
         } else if (enabledDeck.equals("mindDeck")){
             Toast.makeText(DeckActivity.this,
-                    "You are not in BODY DECK yet. Your team needs " + (playerNumber+1) +
+                    "Your team needs " + (playerNumber+1) +
                     " cards for the BODY DECK",
                     Toast.LENGTH_LONG).show();
         } else {
@@ -190,9 +193,10 @@ public class DeckActivity extends AppCompatActivity {
 
         if(enabledDeck.equals("spiritDeck")) {
             startActivity(goToCards);
+            finish();
         } else {
             Toast.makeText(DeckActivity.this,
-                    "You are not in SPIRIT DECK yet. Your team needs " + (playerNumber*2+4) +
+                    "Your team needs " + (playerNumber*2+4) +
                             " cards for the SPIRIT DECK",
                     Toast.LENGTH_LONG).show();
         }
@@ -252,6 +256,7 @@ public class DeckActivity extends AppCompatActivity {
         Intent goToMain = new Intent(this,MainActivity.class);
         setUpToGoToNextActivity(goToMain);
         startActivity(goToMain);
+        finish();
     }
 
     public void onTurnExpClick(View view) {
@@ -259,9 +264,11 @@ public class DeckActivity extends AppCompatActivity {
         turnExpRL.setVisibility(View.INVISIBLE);
     }
 
-    public void onAutoWinClick(View view) {
-        Intent goToWin = new Intent(this, WinActivity.class);
-        setUpToGoToNextActivity(goToWin);
-        startActivity(goToWin);
-    }
+//    public void onAutoWinClick(View view) {
+//        Intent goToWin = new Intent(this, WinActivity.class);
+//        setUpToGoToNextActivity(goToWin);
+//        startActivity(goToWin);
+//finish();
+//    }
 }
+

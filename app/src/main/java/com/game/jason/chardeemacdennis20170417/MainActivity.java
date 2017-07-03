@@ -276,6 +276,7 @@ public class MainActivity extends AppCompatActivity {
         startGame.putExtra("continueMusic", continueMusic);
 
         startActivityForResult(startGame, result);
+        finish();
     }
 /*-----     Start Game Buttons end     -----*/
 

@@ -58,7 +58,7 @@
                 android:id="@+id/try_swiping_container"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@color/black"
+                android:background="#CC000000"
                 android:padding="10dp"
                 android:layout_margin="30dp"
                 android:paddingStart="15dp"
@@ -72,21 +72,9 @@
                     android:id="@+id/try_swiping_TV"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@color/black"
-                    android:text="Try swiping"
+                    android:text="Try swiping the image"
                     android:textColor="@color/white"
                     android:textSize="40sp"
-                    android:textAlignment="center" />
-
-                <TextView
-                    android:id="@+id/try_swiping_subTV1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@color/black"
-                    android:text="Hold image and swipe"
-                    android:textColor="@color/light_gray"
-                    android:textSize="30sp"
-                    android:textStyle="italic"
                     android:textAlignment="center" />
 
             </LinearLayout>

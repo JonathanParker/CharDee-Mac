@@ -157,6 +157,7 @@ public class CardActivity extends AppCompatActivity {
 
         setUpToGoToNextActivity(goToDeck);
         startActivity(goToDeck);
+        finish();
     }
 
     public void onBluePlusOneClick(View view) {
@@ -164,11 +165,12 @@ public class CardActivity extends AppCompatActivity {
     }
     public void onBluePlusOne() {
 
-            deck.remove(0);
-            //---------   go back to deck   ---------//
-            blueScore++;
-            setUpToGoToNextActivity(goToDeck);
-            startActivity(goToDeck);
+        deck.remove(0);
+        //---------   go back to deck   ---------//
+        blueScore++;
+        setUpToGoToNextActivity(goToDeck);
+        startActivity(goToDeck);
+        finish();
     }
     public void onRedPlusOneClick(View view) {
         redPlusOne();
@@ -180,7 +182,7 @@ public class CardActivity extends AppCompatActivity {
         redScore++;
         setUpToGoToNextActivity(goToDeck);
         startActivity(goToDeck);
-
+        finish();
     }
 
 /*  can probably take out
@@ -245,11 +247,13 @@ public class CardActivity extends AppCompatActivity {
         if(teamThatsUp.equals("preview")) {
             setUpToGoToNextActivity(goToMain);
             startActivity(goToMain);
+            finish();
         } else {
             deck.remove(0);
             //---------   go back to deck   ---------//
             setUpToGoToNextActivity(goToDeck);
             startActivity(goToDeck);
+            finish();
         }
     }
 

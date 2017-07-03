@@ -19,6 +19,15 @@
     <string name="splitTeam">Split into two teams</string>
     <string name="judge_sub0">- ONLY ONE HOLDING THE PHONE</string>
     <string name="deck_msg_title">Few More Things…</string>
+    <string name="before_we_start">Before we start...</string>
+    <string name="pick_a_judge">Pick a Judge</string>
+    <string name="reads_cards">Reads Cards</string>
+    <string name="has_final_say_on_everything">Has final say on EVERYTHING</string>
+    <string name="ex_who_wins_card">Ex: Who wins card</string>
+    <string name="rule_interpretation">Rule interpretation</string>
+    <string name="facilitates_the_game">Facilitates the game</string>
+    <string name="split_into_2_teams">Split into 2 teams</string>
+    <string name="start">Start</string>
 
 
     <string-array name="mind_deck_title">
