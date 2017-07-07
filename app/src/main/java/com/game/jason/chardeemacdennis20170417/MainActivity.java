@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
+import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -42,9 +43,12 @@ public class MainActivity extends AppCompatActivity {
     private String previewDescriptionString;
     private String previewImageURLString;
     private String previewDeckTypeString;
+    private Boolean exit = false;
 
 
-//    File->Settings->Editor->Colors & Fonts->
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,9 +65,9 @@ public class MainActivity extends AppCompatActivity {
         decorView.setSystemUiVisibility(uiOptions);
 
         NumberPicker picker = (NumberPicker) findViewById(R.id.player_NP);
-        picker.setMinValue(1);
-        picker.setMaxValue(14);
-        picker.setValue(8);
+        picker.setMinValue(3);
+        picker.setMaxValue(13);
+        picker.setValue(5);
     }
 
 
@@ -508,5 +512,23 @@ public class MainActivity extends AppCompatActivity {
             bmImage.setImageBitmap(result);
         }
     }
-}
 
+    @Override
+    public void onBackPressed() {
+        if (exit) {
+            finish(); // finish activity
+        } else {
+            Toast.makeText(this, "Press Back again to Exit.",
+                    Toast.LENGTH_SHORT).show();
+            exit = true;
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    exit = false;
+                }
+            }, 3 * 1000);
+
+        }
+
+    }
+}

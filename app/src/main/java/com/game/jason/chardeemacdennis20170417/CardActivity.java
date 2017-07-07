@@ -2,6 +2,7 @@ package com.game.jason.chardeemacdennis20170417;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,6 +14,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 /*use for adding card add functionality*/
 //import android.widget.EditText;
 //import android.widget.Toast;
@@ -28,7 +30,7 @@ import java.util.List;
 
 public class CardActivity extends AppCompatActivity {
 
-    public static MyAppAdapter myAppAdapter;
+    private static MyAppAdapter myAppAdapter;
     public static ViewHolder viewHolder;
     private SwipeFlingAdapterView flingContainer;
     private ArrayList deck;
@@ -45,6 +47,7 @@ public class CardActivity extends AppCompatActivity {
     private Intent goToDeck;
     private  Intent goToMain;
     public Boolean continueMusic = true;
+    private Boolean exit = false;
     /*use for adding card add functionality*/
 //    EditText title;
 //    EditText description;
@@ -185,64 +188,6 @@ public class CardActivity extends AppCompatActivity {
         finish();
     }
 
-/*  can probably take out
-    public void onPreviewClick(View view) {
-
-        String titleString = title.getText().toString();
-        String descriptionString = description.getText().toString();
-        String imageURLString = imageURL.getText().toString();
-
-        if( titleString.isEmpty() || descriptionString.isEmpty() ){*/
-/*
-            Button mButton = (Button) findViewById(R.id.previewButton);
-            onMakeCardClick(mButton);*//*
-
-            Toast.makeText(CardActivity.this,
-                    "title, description, and deck type are required.",
-                    Toast.LENGTH_LONG).show();
-        } else {
-            //--- gathering deck type ---//
-            int selectedId = deckTypeRGroup.getCheckedRadioButtonId();
-            View deckTypeRBtnView = deckTypeRGroup.findViewById(selectedId);
-            int deckTypeRBtnId = deckTypeRGroup.indexOfChild(deckTypeRBtnView);
-            RadioButton deckTypeRBtn = (RadioButton) deckTypeRGroup.getChildAt(deckTypeRBtnId);// --- left off here 4/16 10:09
-            String deckTypeString = deckTypeRBtn.getText().toString().toLowerCase();
-            */
-/*--- gathering deck type end ---*//*
-
-            String enabledDeck;
-            if (deckTypeString.equals("mind")) {
-                mindDeck = new ArrayList<>();
-                enabledDeck = "mindDeck";
-                mindDeck.add(0, new Data(imageURLString, descriptionString, titleString));
-            } else if (deckTypeString.equals("body")) {
-                bodyDeck = new ArrayList<>();
-                enabledDeck = "bodyDeck";
-                bodyDeck.add(0, new Data(imageURLString, descriptionString, titleString));
-            } else {
-                spiritDeck = new ArrayList<>();
-                enabledDeck = "spiritDeck";
-                spiritDeck.add(0, new Data(imageURLString, descriptionString, titleString));
-            }
-
-            final int result = 1;
-            Intent goToCards = new Intent(this, CardActivity.class);
-            String teamThatsUp = "preview";
-            int playerNumber = 1;
-            goToCards.putExtra("teamThatsUp", teamThatsUp);
-            goToCards.putExtra("mindDeck", mindDeck);
-            goToCards.putExtra("bodyDeck", bodyDeck);
-            goToCards.putExtra("spiritDeck", spiritDeck);
-            goToCards.putExtra("playerNumber", playerNumber);
-            goToCards.putExtra("deckType", enabledDeck);
-            goToCards.putExtra("blueScore", blueScore);
-            goToCards.putExtra("redScore", redScore);
-
-            startActivityForResult(goToCards, result);
-        }
-    }
-*/
-
     public void onNoPointClick(View view) {
         if(teamThatsUp.equals("preview")) {
             setUpToGoToNextActivity(goToMain);
@@ -368,4 +313,23 @@ public class CardActivity extends AppCompatActivity {
         intent.putExtra("gameHasStarted", gameHasStarted);
     }
 
+
+    @Override
+    public void onBackPressed() {
+        if (exit) {
+            finish(); // finish activity
+        } else {
+            Toast.makeText(this, "Press Back again to Exit.",
+                    Toast.LENGTH_SHORT).show();
+            exit = true;
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    exit = false;
+                }
+            }, 3 * 1000);
+
+        }
+
+    }
 }
