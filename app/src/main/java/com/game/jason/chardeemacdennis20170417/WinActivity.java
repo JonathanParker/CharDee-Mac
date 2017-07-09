@@ -1,6 +1,8 @@
 package com.game.jason.chardeemacdennis20170417;
 
+import android.content.ComponentCallbacks2;
 import android.content.Intent;
+import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -8,21 +10,23 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
 
 public class WinActivity extends AppCompatActivity {
 
-    int blueScore;
-    int redScore;
-    ArrayList mindDeck;
-    ArrayList bodyDeck;
-    ArrayList spiritDeck;
-    String teamThatsUp;
-    int playerNumber;
-    String enabledDeck;
+    private int blueScore;
+    private int redScore;
+    private ArrayList mindDeck;
+    private ArrayList bodyDeck;
+    private ArrayList spiritDeck;
+    private String teamThatsUp;
+    private int playerNumber;
+    private String enabledDeck;
     public Boolean continueMusic = true;
+    private Boolean exit = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -133,5 +137,85 @@ public class WinActivity extends AppCompatActivity {
     public void onWinMessageRemoveClick(View view) {
         RelativeLayout winMessageRL = (RelativeLayout) findViewById(R.id.win_message_RL);
         winMessageRL.setVisibility(View.INVISIBLE);
+        winMessageRL = null;
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (exit) {
+            finish(); // finish activity
+        } else {
+            Toast.makeText(this, "Press Back again to Exit.",
+                    Toast.LENGTH_SHORT).show();
+            exit = true;
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    exit = false;
+                }
+            }, 3 * 1000);
+
+        }
+
+    }
+
+    /**
+     * Release memory when the UI becomes hidden or when system resources become low.
+     * @param level the memory-related event that was raised.
+     */
+    public void onTrimMemory ( int level){
+
+        // Determine which lifecycle or system event was raised.
+        switch (level) {
+
+            case ComponentCallbacks2.TRIM_MEMORY_UI_HIDDEN:
+
+            /*
+               Release any UI objects that currently hold memory.
+
+               The user interface has moved to the background.
+            */
+
+                break;
+
+            case ComponentCallbacks2.TRIM_MEMORY_RUNNING_MODERATE:
+            case ComponentCallbacks2.TRIM_MEMORY_RUNNING_LOW:
+            case ComponentCallbacks2.TRIM_MEMORY_RUNNING_CRITICAL:
+
+            /*
+               Release any memory that your app doesn't need to run.
+
+               The device is running low on memory while the app is running.
+               The event raised indicates the severity of the memory-related event.
+               If the event is TRIM_MEMORY_RUNNING_CRITICAL, then the system will
+               begin killing background processes.
+            */
+
+                break;
+
+            case ComponentCallbacks2.TRIM_MEMORY_BACKGROUND:
+            case ComponentCallbacks2.TRIM_MEMORY_MODERATE:
+            case ComponentCallbacks2.TRIM_MEMORY_COMPLETE:
+
+            /*
+               Release as much memory as the process can.
+
+               The app is on the LRU list and the system is running low on memory.
+               The event raised indicates where the app sits within the LRU list.
+               If the event is TRIM_MEMORY_COMPLETE, the process will be one of
+               the first to be terminated.
+            */
+
+                break;
+
+            default:
+            /*
+              Release any non-critical data structures.
+
+              The app received an unrecognized memory level value
+              from the system. Treat this as a generic low-memory message.
+            */
+                break;
+        }
     }
 }

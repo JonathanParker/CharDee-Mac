@@ -100,7 +100,6 @@
     </string-array>
 
 
-
     <string-array name="mind_deck_image_url">
         <item>https://c1.staticflickr.com/5/4162/34053589990_8fcbf56b2f_z.jpg</item><!--cat in a sleeve attribute: https://www.flickr.com/photos/serger/4132216342/in/photostream/-->
         <item>https://c1.staticflickr.com/5/4177/34033652000_c1df124e69_z.jpg</item><!--blind artist, personal picture-->
@@ -268,7 +267,7 @@
         <item>If you want this card, the opposing team is allowed to pour their current beverages on you. You must not change clothes until you complete the game, but you may opt to take a COLD shower.</item>
         <item>Correctly state each of your teammate’s age and birth months. Incorrect birthday for a teammate result in said teammate and card drawer taking a half shot each.</item>
         <item>Both teams must position themselves as in the picture with final player moving on all fours. Teams then race a predetermined distance, preferably outside. First team to finish wins the card. Losing team must drink a shot each.</item>
-        <item >You must hand your cell phone over to the opposing team. You must watch and listen as the opposing team is given 2 min to send embarrassing text messages to anyone on your contact list excluding bosses and nuclear family members. Each text can only be sent to one person at a time (no mass forwarding). If you complain, ask them to stop, or obstruct the other team in any way you lose. An opposing team member must take a shot for every text sent out.</item>
+        <item>You must hand your cell phone over to the opposing team. You must watch and listen as the opposing team is given 2 min to send embarrassing text messages to anyone on your contact list excluding bosses and nuclear family members. Each text can only be sent to one person at a time (no mass forwarding). If you complain, ask them to stop, or obstruct the other team in any way you lose. An opposing team member must take a shot for every text sent out.</item>
         <item>Call your mother (if player is male) or father (if player is female), or oldest child if needed, and either ask for some kind of dating advice or ask for them to set you up with one of their friends children. If the player isxhe player can either pass this off to a single (not in a relationship) team member or ask their mother/father for advice in how to cheat on their current significant other. Mentioning the game or the call is a ruse results in failure of card and player’s entire team must take a shot. The call must last 1 minute, after which hanging up is permissible. The phone must be given to the judge afterwards to prevent explanation until the end of the game.</item>
         <item>The opposing team has the opportunity to say ANYTHING they want for 2 minutes, but must mix in “intervention themed insults”. Nothing is too far. Anything is in play. Any defending by the drawing team (resist flinching, smiling, crying or cowering) results in losing. Opposing team may steal</item>
     </string-array>
