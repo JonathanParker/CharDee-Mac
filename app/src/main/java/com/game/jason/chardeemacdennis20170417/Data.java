@@ -7,7 +7,7 @@ import java.io.Serializable;
  */
 
 
-public class Data implements Serializable {
+class Data implements Serializable {
 
     private String description;
     private String title;

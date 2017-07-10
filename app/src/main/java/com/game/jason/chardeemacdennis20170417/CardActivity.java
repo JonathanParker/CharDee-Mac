@@ -31,8 +31,8 @@ import java.util.List;
 
 public class CardActivity extends AppCompatActivity {
 
-    private static MyAppAdapter myAppAdapter;
-    public static ViewHolder viewHolder;
+    private MyAppAdapter myAppAdapter;
+    public ViewHolder viewHolder;
     private SwipeFlingAdapterView flingContainer;
     private ArrayList deck;
     int blueScore;
@@ -208,8 +208,8 @@ public class CardActivity extends AppCompatActivity {
         turnExpRL.setVisibility(View.INVISIBLE);
     }
 
-    private static class ViewHolder {
-        public static FrameLayout background;
+    private class ViewHolder {
+        public FrameLayout background;
         public TextView DataText;
         public TextView titleText;
         public ImageView cardImage;

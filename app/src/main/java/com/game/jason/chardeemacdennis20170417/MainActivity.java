@@ -24,6 +24,7 @@ import android.widget.Toast;
 
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class MainActivity extends AppCompatActivity{
       /*  implements ComponentCallbacks2*/
@@ -281,7 +282,7 @@ public class MainActivity extends AppCompatActivity{
 
     /*-----     Start Game Buttons start     -----*/
     /* go to pre-game setup */
-    public void onStartSetupFullClick(View view) {
+    private void onStartSetupFullClick(View view) {
         playerNumberEdit = (NumberPicker) findViewById(R.id.player_NP);
         playerNumberValue = String.valueOf(playerNumberEdit.getValue());
         AlertDialog.Builder mBuilder = new AlertDialog.Builder(MainActivity.this);
@@ -328,9 +329,9 @@ public class MainActivity extends AppCompatActivity{
         Intent startGame = new Intent(this, DeckActivity.class);
         final int result = 1;
         final int playerNumber = Integer.parseInt(playerNumberValue) / 2;
-/*        Collections.shuffle(mindDeck);
+        Collections.shuffle(mindDeck);
         Collections.shuffle(bodyDeck);
-        Collections.shuffle(spiritDeck);*/
+        Collections.shuffle(spiritDeck);
         startGame.putExtra("playerNumber", playerNumber);
         startGame.putExtra("mindDeck", mindDeck);
         startGame.putExtra("bodyDeck", bodyDeck);
@@ -552,7 +553,7 @@ public class MainActivity extends AppCompatActivity{
     private class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
         ImageView bmImage;
 
-        public DownloadImageTask(ImageView bmImage) {
+        private DownloadImageTask(ImageView bmImage) {
             this.bmImage = bmImage;
         }
 
