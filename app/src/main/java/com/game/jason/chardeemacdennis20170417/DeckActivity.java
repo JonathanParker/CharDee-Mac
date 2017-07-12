@@ -62,13 +62,14 @@ public class DeckActivity extends AppCompatActivity {
         mAdView.loadAd(adRequest);
 
         //----   hide status bar   ----//
-        View decorView = getWindow().getDecorView();
-        int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-                | View.SYSTEM_UI_FLAG_FULLSCREEN
-                | View.SYSTEM_UI_FLAG_IMMERSIVE
-                | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-                | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION;
-        decorView.setSystemUiVisibility(uiOptions);
+//        View decorView = getWindow().getDecorView();
+//        int uiOptions =
+//                View.SYSTEM_UI_FLAG_HIDE_NAVIGATION;
+//                | View.SYSTEM_UI_FLAG_FULLSCREEN
+//                | View.SYSTEM_UI_FLAG_IMMERSIVE
+//                | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+//                | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION;
+//        decorView.setSystemUiVisibility(uiOptions);
 
         setUpContext();
         setUpScoreBoard();
