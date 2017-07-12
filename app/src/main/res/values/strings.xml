@@ -1,0 +1,315 @@
+<resources>
+    <string name="app_name">CharDee MacDennis</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="chardee_macdennis">CharDee\nMacDennis</string>
+    <string name="express_game">Express</string>
+    <string name="player_1_button">player 1 button</string>
+    <string name="mind_deck_button">Mind deck button</string>
+    <string name="body_deck_button">body deck button</string>
+    <string name="spirit_deck_button">spirit deck button</string>
+    <string name="how_many_players_are_playing">How many players are playing?</string>
+    <string name="key_pref_music_volume">preference music volume</string>
+    <string name="full_game">Full</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+
+
+
+
+    <string-array name="mind_deck_title">
+        <item>Cat In A Sleeve</item>
+        <item>Blind Artist</item>
+        <item>Lite Beer Taste Test</item>
+        <item>10 Digits</item>
+        <item>Hand Actors Studio</item><!-- fix: off center picture -->
+        <item>Hide the Coin</item>
+        <item>Human Calculator</item>
+        <item>Lie to Me</item><!-- fix: check copyright-->
+        <item>The Patriot</item><!--/*CC0 no attribution*/-->
+        <item>Sensual Footing</item>
+        <item>Sex Offender</item>
+        <item>Sexual History</item><!-- fix: need new picture without copyright -->
+        <item>Blind Pour</item>
+        <item>Shut the Fuck UP</item>
+        <item>Candy Shopping</item>
+        <item>Reverse Spelling Bee</item>
+        <item>Trumpisms</item>
+        <item>Wheel Barrel Drawing</item>
+        <item>World Traveler</item>
+        <item>Nick Names</item>
+    </string-array>
+
+    <string-array name="mind_deck_supplies">
+        <item>blanket</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="mind_deck_description">
+        <item>Have you ever wrapped pretended you are a burrito and have your siblings eat you? No? Well, me neither… but many cats have pretend to be burritos by climbing into a sleeve and pur helplessly while their owners pictures, and after today so will you.  The two shortest member from each team will go head to head in cat in a sleeve race.  They will be wrapped in a blanket and race across the room.  The winner gets this card, and the loser is a loser.</item>
+        <item>The artist from both teams must draw an object decided by the judge on their respective teammates back. Teammate being drawn on must guess the clue solely on feel. First to guess correctly wins the card. Opposing team must drink a glass of wine each.  The game shown here is what you can hope to achieve</item>
+        <item>Teams must nominate a blind taste tester. Three one ounce “lite beers” are poured in front of the tester, with full beers sitting to the side. If the player cannot correctly label each beer, the player must consume the remaining beer in the cans. If one team player correctly guesses each beer, and the other team fails to do the same, winning team gets the card and losing team has to finish the beer. If both players guess wrong, or both players guess correctly, another player from each team must attempt to complete the task until the correct answer is achieved by only one side."</item>
+        <item>Have the opposing team write down a 10-digit number on a piece of paper and hand it to a player on your team. The player can then speak the number only once. The remaining players on the team then have to keep the number in their heads (no speaking) for 30 seconds starting after the last number was spoken. During the 30 seconds the opposing team can use whatever verbal attacks they want in order to confuse the other players. Completion wins the card. Losing team must drink a glass of wine each</item>
+        <item>Opposing team chooses a popular movie that everyone would know. Card-drawing team chooses a player to act out the movie using only their hands and sound effects. No actual words may be spoken and actor must remain seated. If team guesses correctly within 30 seconds, they get the card.</item>
+        <item>Opposing team members all place hands flat on the table, with one hand hiding a coin. The Card-drawing team must decide which hand hides the coin. If the team guesses correctly, they get the card. Card-drawing team may repeat BUT every player must consume a new full glass of wine before opposing team resets coin.</item>
+        <item>Have the other team write down two 2-digit numbers. Your team has 30 seconds to multiply those numbers in your heads (no paper, no calculator, no abacus). Completion wins the card. Losing team must consume a glass of wine each.</item>
+        <item>Drawer plays 2 truths 1 lie against the opposing team. If the opposing team guesses correctly, the card is discarded, otherwise you win this card.</item>
+        <item>Everyone on your team must name 3 different presidents you have 30 seconds to win this card GO!</item>
+        <item>One member from each team removes their left socks and has to draw a picture of a sexual position with their foot first team to guess within 2 guesses wins the card however if both pictures are the same position everyone drinks wines equal to guesses made in total by both teams and repeat; the artist doesn’t change.</item>
+        <item>Player who selects this card has 1 minutes to draw any other player in the room, as a Rapist, A Pedophile or a Murder. Players own team has 2 chances to 1) guess the person drawn in the picture AND 2) guess is he/she a Rapist, a Pedophile or a Murder (e.g. Ben the Murderer is one guess). If guessed correctly, the subject must drink a glass of wine because they were caught and a card is awarded to the drawing team. If not, everyone else must drink a glass of wine because there is a sex offender on the loose, and it’s all your fault.</item>
+        <item>The player who draws this card must recite the full names of each of their teammates last hook up (making out or sex) before the opposing team can pour and drink a glass of wine for every two players on their team. Success gets you the card. Losing team must drink more wine.</item>
+        <item>A player from each team must be blindfolded and attempt to pour the most amount of wine into a wine glass without spilling. A single drop spilt will result in a voided submission. The team with the most liquid wins the card and losing blindfold-ee must drink the poured volume of both glasses.</item>
+        <item>Pontificate on a topic chosen by the opposing team for 60 seconds without any fillers (er, um, uh, y’know) or pauses over 3 seconds. Opposing team may try to interrupt. Completion wins the card.</item>
+        <item>Act out your personal blow job technique for 30 seconds on a teammate’s thumb. Thumb must be fully in mouth at some point. “Candy Shop” by 50 Cent will be playing the background. Judge rules if the card is awarded.</item>
+        <item>Normal spelling bee rules. Judge will select words at random from this rule book and quiz the same player from each respective team, alternating teams, in order to spell the word backward correctly. Failure to spell a word removes the player from the competition and loser must drink a glass of wine. Winning team wins the card. If no judge present then one player from each team taking turns asking the opposing team.</item>
+        <item>Player that drew the card must pretend to be Trump giving a press conference defending his lewd comments about his daughter. The press conference will go for 30 seconds, and all hand motions must be included. Completion wins the card, failure results in the player getting drawn on their face with orange marker.</item>
+        <item>Both Teams must elect an artist and a “holder”. The holder holds the artists two feet off the ground only using his or her hands. The artist is given a sharpie or marker and, using only their mouth to hold the marker, must draw an object chosen by the judge. After two minutes, both artists stop and the judge picks the closest representation of the object. If the artist’s feet hit the floor, that team loses and must finish a full beer each.</item>
+        <item>Name 10 international capitals in 30 seconds to win this card. Go.</item>
+        <item>If you chose to keep the card, everyone on your team gets a nickname (decided by your team). Now, you must only refer to each other by your nicknames. Failure to do so will result in losing two points.</item>
+    </string-array>
+
+
+
+    <string-array name="mind_deck_image_url">
+        <item>https://c1.staticflickr.com/5/4162/34053589990_8fcbf56b2f_z.jpg</item><!--cat in a sleeve attribute: https://www.flickr.com/photos/serger/4132216342/in/photostream/-->
+        <item>https://c1.staticflickr.com/5/4177/34033652000_c1df124e69_z.jpg</item><!--blind artist, personal picture-->
+        <item>https://c1.staticflickr.com/6/5667/21797574696_d899ebb42b_b.jpg</item><!--Lite Beer Taste Test, attribute: https://www.flickr.com/photos/135622164@N03/21797574696-->
+        <item>https://c1.staticflickr.com/8/7098/7301506118_4884ff4de5_h.jpg</item><!--10 Digits-->
+        <item>https://c1.staticflickr.com/5/4159/34452939285_679b126735.jpg</item><!--Hand Actors Studio, no attribution, wikipedia-->
+        <item>http://maxpixel.freegreatpicture.com/static/photo/1x/Savings-Money-Rich-Coin-Glossy-A-Wealth-Of-Coins-1080535.jpg</item><!--Hide the coin, CC0 no attribution-->
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Lots_of_math_symbols_and_numbers.svg/500px-Lots_of_math_symbols_and_numbers.svg.png</item><!--Human Calculator, wikipedia-->
+        <item>https://c1.staticflickr.com/5/4161/34286830841_8047a2954b_z.jpg</item><!--Lie to Me, didn't find anything-->
+        <item>https://cdn.pixabay.com/photo/2016/04/25/14/52/dollar-1352097_960_720.png<!--/*CC0 no attribution*/--></item><!--The Patriot-->
+        <item>https://cdn.pixabay.com/photo/2012/04/26/19/48/feet-42939_960_720.png<!--/*CC0 no attribution*/--></item><!--sensual footing-->
+        <item>https://c1.staticflickr.com/5/4162/34266032615_a67275c7fd_c.jpg</item><!--Sex Offender, no attribution-->
+        <item>https://c1.staticflickr.com/5/4192/33643226073_3c0781bb49_z.jpg</item><!--Sexual History, CC0 no attribute-->
+        <item>https://upload.wikimedia.org/wikipedia/commons/9/9d/Red_wine_in_glass.jpg</item><!--Blind Pour, probably CC0-->
+        <item>https://cdn.pixabay.com/photo/2016/06/03/07/26/yada-yada-1432921_1280.jpg</item><!--Shut the Fuck Up, CC0 no attribute-->
+        <item>https://c1.staticflickr.com/3/2823/34109216292_8b99d2b704_b.jpg</item><!--Candy Shopping, wikipedia commons-->
+        <item>https://c1.staticflickr.com/5/4184/34248165156_1ddfdcc136.jpg<!--/*COO self created*/--></item><!--Reverse Spelling Bee-->
+        <item>https://c1.staticflickr.com/3/2854/34134790731_5cbfe19b10_z.jpg</item><!--Trumpism, hopefully no one catches this-->
+        <item>https://c1.staticflickr.com/8/7146/6508775263_400265474d_b.jpg</item><!--Wheel Barrel, CC0 no attribute-->
+        <item>https://c1.staticflickr.com/3/2813/34288777505_1a815c89c2_b.jpg<!--/*pulled from google maps*/--></item><!--World Traveler-->
+        <item>https://c1.staticflickr.com/3/2891/34135112701_622364493a_b.jpg</item><!--Nick Names-->
+    </string-array>
+
+    <string-array name="mind_deck_attribute">
+        <item>Sergey Rodovnichenko</item><!--cat in a sleeve attribute: https://www.flickr.com/photos/serger/4132216342/in/photostream/-->
+        <item>Jason Hu</item><!--blind artist, personal picture-->
+        <item>Lauren Topor</item><!--Lite Beer Taste Test, attribute: https://www.flickr.com/photos/135622164@N03/21797574696-->
+        <item>Public Domain</item><!--10 Digits-->
+        <item>Public Domain</item><!--Hand Actors Studio, no attribution, wikipedia-->
+        <item>Public Domain</item><!--Hide the coin, CC0 no attribution-->
+        <item>Public Domain</item><!--Human Calculator, wikipedia-->
+        <item>Public Domain</item><!--Lie to Me, didn't find anything-->
+        <item>Public Domain</item><!--The Patriot-->
+        <item>Public Domain</item><!--sensual footing-->
+        <item>Public Domain</item><!--Sex Offender, no attribution-->
+        <item>Public Domain</item><!--Sexual History, CC0 no attribute-->
+        <item>Public Domain</item><!--Blind Pour, probably CC0-->
+        <item>Public Domain</item><!--Shut the Fuck Up, CC0 no attribute-->
+        <item>Public Domain</item><!--Candy Shopping, wikipedia commons-->
+        <item>Jason Hu</item><!--Reverse Spelling Bee-->
+        <item>Public Domain</item><!--Trumpism, hopefully no one catches this-->
+        <item>Public Domain</item><!--Wheel Barrel, CC0 no attribute-->
+        <item>Google Maps</item><!--World Traveler-->
+        <item>Jason Hu</item><!--Nick Names-->
+    </string-array>
+
+    <string-array name="body_deck_title">
+        <item>Puppy Bowl</item><!-- fix: slow load-->
+        <item>Arm wrestling</item><!-- fix: no copy right -->
+        <item>Home-made Carousel</item>
+        <item>Beer Run</item>
+        <item>Beer Auction</item>
+        <item>Boat Race</item>
+        <item>Can Crush</item>
+        <item>Hot Chicken</item>
+        <item>Chugging Relay</item>
+        <item>Dizzy Dinosaur</item>
+        <item>Dragon’s Breath</item>
+        <item>Drink Sergeant</item>
+        <item>David &amp; Goliath</item>
+        <item>5 Second Categories</item>
+        <item>Flip Flip Flipadelphia</item>
+    </string-array>
+
+    <string-array name="body_deck_description">
+        <item>I hope you like puppies because now you are about to be a puppy!  The drawer and a member from the opposing team of the judges choosing will have to drink a beer from a bowl that is placed on the floor.  The first person to finish will win this card.  The last person to finish will have to replace their facebook profile picture with a picture of a sad pug.  Bone Appetit</item>
+        <item>Player who selects this card must arm wrestle a player from the opposing team of their own selection. If player is successful, player may elect to steal a card (loss of card may drop a team into a lower level) OR force the entire opposing team to consume a full beer each.</item>
+        <item>A player is selected from each team. Each one of these players will spin in a circle, last one standing gets the card. Players on the sidelines can shout “faster” and both players must comply. Losing player does not have to drink but must select a teammate to drink a full beer for them.</item>
+        <item>Whoever pulls this card may designate an opponent of their choosing. The chosen opponent must shotgun a beer, and then run around the block. If they can complete the run without vomiting, or spewing foam, they win the card. Losing team must consume a full beer each including the runner.</item>
+        <item>Team who pulls card goes first. They pick a number of beers they think their team can drink in 3 minutes. Opposing team can bid higher. Whoever bids the highest must drink that number of beers in 3 minutes. Failure to do so allows opposing team to attempt their lower bid. Failure to do so means nobody wins the card. Celine Dion, The Power of Love will be played in the background on repeat.</item>
+        <item>Each team stands in a line, one behind the other. Everyone has the same amount of beer. On the word GO, the first person must drink their beer as quickly as possible. As soon as they finish, they must put the cup upside down on their head and the next person starts drinking. Each member of the team must wait until the person in front of them has their cup on their head before they can start. The card goes to the team that finishes first. Players may opt to not consume the beer and instead pour the beer on their head when placing the cup upside down.</item>
+        <item>Player selecting the card elects one player from his team to crush an unopened can of beer using only their body and the ground (if needed). Nominee has 1 minute to complete the task. Failure results in team drinking 1 beer each. Success yields card and the opposing team must drink 1 beer each.</item>
+        <item>A player from each team will place their hands in a cold pot of water over a stove. Turn up the heat. Last one in gets the card, loser has to consume a WARM beer.</item>
+        <item>Teams line up facing each other. In order, must consume 1 full beer to pass the “baton.” Winning team wins the card and losing team MUST still finish their beers.</item>
+        <item>A player from each team must spin around twenty times, then walk to a table ten yards away and finish a beer, no vomiting. First to finish wins the card.</item>
+        <item>A random person from the card drawing team will take a shot of hot sauce. If the opposing team cant guess who took it with their first guess, the ard drawing team wins the card. Opponents may steal.</item>
+        <item>Do push ups until your teammates finish a beer one after another. “Take On Me” by a-ha will be playing in the background on repeat.</item>
+        <item>The drawer must compete against the tallest opposing player. Each player has two minutes to do 10 pushups, take a shot of beer and repeat. Whoever completes the most wins the card. In the event of a tie, both players must remain above the ground in a push up position. First to drop any part of their body (including a shirt which may be removed) loses.</item>
+        <item>A member of the opposing team (your choice) grabs your nipple and will not let go until you name five of some category, e.g. cereals, pokemon, 90’s band, etc, within five seconds. Females may choose to opt out but a substitute team member must participate.</item>
+        <item>Each team lines up on one side of the table and each player has a cup with an equal amount of beer. The start of the line must chug their beer then flip their cup upside down on the table before the next team member can drink. The first team member to have all  players drink and land their cups wins the round and votes off a member of the other team. The same number of cups remain on the table meaning the losing team must consume multiple cups. Game play continues until all players on one team are eliminated. “Whats New Pussycat” by Tom Jones will be playing on repeat in the background.</item>
+    </string-array>
+
+    <string-array name="body_deck_supplies">
+        <item></item>
+        <item></item>
+        <item>house</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>stove</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="body_deck_image_url">
+        <item>https://c1.staticflickr.com/5/4177/33703782574_6ff1357f64.jpg</item>
+        <item>http://survive55.com/uploads/3/4/3/3/34331028/6656070.jpg</item>
+        <item>https://c1.staticflickr.com/5/4182/34033048430_78fc9f6cca_z.jpg</item><!--attribute https://www.flickr.com/photos/neilt/4128905922/in/photolist-7hRHT9-dZSN4k-fzikL-4LxHZ-8q3R4B-7f536Q-5JM26K-hTRhat-CG1mP-jUShJ-4N5xZa-6Lx895-7imb2-6m5czR-c8HJ8N-6Lx8Rb-59s2Hg-7mfPUD-8nEY13-4L5WP5-59suqZ-cBk5z-hAJMEf-5s8gYv-8RnNpA-NyoqW-Bo5Wqz-5aJhPc-6m9n2A-4xvgu7-j9rcSG-LZHKp-6SYD5q-af7XJb-8Ywydj-rZTkF-STeBzA-dSfe74-9vGfMq-6m5cGF-5aZ4U8-bxGVdh-aJEmdK-6BPPr4-ixjNy-3KQK3X-6tpdW8-e9sBVS-736Md1-debVKg-->
+        <item>http://i.vimeocdn.com/video/519682720_1280x720.jpg</item>
+        <item>https://c1.staticflickr.com/3/2887/34288995145_b30dc2829c_z.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/7/7a/Flipcuppers.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/0/02/Crushed_Chocolatemilk_can.jpg</item>
+        <item>https://c1.staticflickr.com/3/2945/34226428696_cf31768650_c.jpg</item>
+        <item>https://c1.staticflickr.com/6/5769/23109909121_195c49f7bc_c.jpg</item>
+        <item>https://s-media-cache-ak0.pinimg.com/236x/cc/fb/a5/ccfba50ffa596fe55389b778c62b1cca.jpg</item>
+        <item>https://c1.staticflickr.com/5/4168/34335126642_aaf3c9cf62.jpg</item><!-- dragon's breath attribute: https://www.flickr.com/photos/photographingtravis/15941469880/in/photolist-qhGcAY-nc2L7u-SnXiMv-T2QGEN-bK5EB2-5s39LF-4nABuh-8ajdxh-qhNucF-sY6P5G-6HaYX-TBRnnP-8fimB4-dSNA6A-5xf2g6-beyUee-TnV7Zw-qgxPQE-8ktTky-2PEufR-s7PmS8-TsZR8y-2horMZ-pp5sh2-SkgJbU-8DSTJT-SJ6LwM-RxjBvE-SnXw3x-qgY7eo-c5CawS-TBRCve-QNpzBd-4pM3dZ-T2QDCq-5s39LM-QLwU3j-5xMyx6-bwmoLN-96eoxg-T2QCz3-7KcsJe-cjYgBJ-auoLi3-T2QBqu-puhYvJ-4nADHE-6YCTWj-c5BvkL-6iUAwC -->
+        <item>https://c1.staticflickr.com/3/2831/34289137235_350280ca81.jpg</item>
+        <item>https://c1.staticflickr.com/5/4146/4975296555_bd1050daa6_b.jpg<!--/*attribution https://www.flickr.com/photos/42787780@N04/4975296555, https://creativecommons.org/licenses/by/2.0/ --></item>
+        <item>https://c1.staticflickr.com/3/2810/34248916196_16a26bfe4d_z.jpg</item>
+        <item>https://c1.staticflickr.com/5/4187/33457481583_0d6101a834_k.jpg</item>
+    </string-array>
+
+    <string-array name="body_deck_attribute">
+        <item>Emanuelle Mah Til Da</item><!-- Puppy Bowl -->
+        <item>Unknown</item><!-- Arm Wrestling -->
+        <item>Unknown</item><!-- Home-made Carousel, attribute https://www.flickr.com/photos/neilt/4128905922/in/photolist-7hRHT9-dZSN4k-fzikL-4LxHZ-8q3R4B-7f536Q-5JM26K-hTRhat-CG1mP-jUShJ-4N5xZa-6Lx895-7imb2-6m5czR-c8HJ8N-6Lx8Rb-59s2Hg-7mfPUD-8nEY13-4L5WP5-59suqZ-cBk5z-hAJMEf-5s8gYv-8RnNpA-NyoqW-Bo5Wqz-5aJhPc-6m9n2A-4xvgu7-j9rcSG-LZHKp-6SYD5q-af7XJb-8Ywydj-rZTkF-STeBzA-dSfe74-9vGfMq-6m5cGF-5aZ4U8-bxGVdh-aJEmdK-6BPPr4-ixjNy-3KQK3X-6tpdW8-e9sBVS-736Md1-debVKg-->
+        <item>Jamie Troughton</item><!-- Beer Run -->
+        <item>Adam Wilson</item><!-- Beer Auction -->
+        <item>Public Domain</item><!-- Boat Race -->
+        <item>Theo</item><!-- Can Crush -->
+        <item>Jason Hu</item><!-- Hot Chicken -->
+        <item>Public Domain</item><!-- Chugging Relay -->
+        <item>Unknown</item><!-- Dizzy Dinosaur -->
+        <item>Travis Wise</item><!-- dragon's breath attribute: https://www.flickr.com/photos/photographingtravis/15941469880/in/photolist-qhGcAY-nc2L7u-SnXiMv-T2QGEN-bK5EB2-5s39LF-4nABuh-8ajdxh-qhNucF-sY6P5G-6HaYX-TBRnnP-8fimB4-dSNA6A-5xf2g6-beyUee-TnV7Zw-qgxPQE-8ktTky-2PEufR-s7PmS8-TsZR8y-2horMZ-pp5sh2-SkgJbU-8DSTJT-SJ6LwM-RxjBvE-SnXw3x-qgY7eo-c5CawS-TBRCve-QNpzBd-4pM3dZ-T2QDCq-5s39LM-QLwU3j-5xMyx6-bwmoLN-96eoxg-T2QCz3-7KcsJe-cjYgBJ-auoLi3-T2QBqu-puhYvJ-4nADHE-6YCTWj-c5BvkL-6iUAwC -->
+        <item>Public Domain</item><!-- Drink Sergeant -->
+        <item>Public Domain<!-- David and Goliath /*attribution https://www.flickr.com/photos/42787780@N04/4975296555, https://creativecommons.org/licenses/by/2.0/ --></item>
+        <item>Unknown</item><!--5 second Categories-->
+        <item>Jason Hu</item><!-- Flip Flip Flipadelphia -->
+    </string-array>
+
+
+    <string-array name="spirit_deck_title">
+        <item>Challenge Accepted</item>
+        <item>Air Blowjob</item>
+        <item>Cold Shower</item>
+        <item>Cry</item>
+        <item>Interpretive Dance</item>
+        <item>Dick Face</item>
+        <item>Emotional Beratement</item>
+        <item>Facebook Fail</item>
+        <item>Golden Showers</item>
+        <item>Happy Birthday!</item>
+        <item>Human Centipede</item>
+        <item>Identity Theft</item>
+        <item>I’m sorry Mom</item>
+        <item>INTERVENTION</item>
+    </string-array>
+
+
+    <string-array name="spirit_deck_description">
+        <item>Pick up a stranger (number) in two minutes. Completion get the card. Opposing team may steal.</item>
+        <item>Mime sucking a dick for 60 seconds, then getting a money shot at the end.</item>
+        <item>Without removing anything article of clothing including shoes, player must take a cold shower so much as his or her entire body is wet. No towel will be provided other than for player to stand on to catch dripping. No change of clothes until game is complete. Opposing team may steal.</item>
+        <item>You have 1 min to produce real tears. If player cannot cry in 1 min they must take a shot.</item>
+        <item>Player selecting this card must do an interpretive dance of the Song “Take My Breath Away” by Berlin with a team member. Dancers must first take a shot each, and then remain in character and “dance” for the entire song.</item>
+        <item>The player who pulls this card has to stand &amp; allow all the players from the opposing team to draw or write anything they want on ANY visible skin with a marker for 1 1/2 minutes (90 secs). This of course includes the face and neck area, among other possible places. If card drawer refuses, their whole team must each take a shot or each chug their drinks.</item>
+        <item>The opposing team has the opportunity to say ANYTHING they want. Nothing is too far. Anything is in play. Player who selects this card must stand up and resist flinching, smiling, crying or cowering for 2 minutes.</item>
+        <item>The player selecting this card must grant access to Opposing team who post (1) status update of their choosing for each shot consumed. Card only awarded to Opposing team IF (10) or more comments (not likes) from non game participants are achieved in 10 minutes. No card is awarded if (10) comments are not made, but opposing team must take a shot each. Game will progress while this time is spent.</item>
+        <item>If you want this card, the opposing team is allowed to pour their current beverages on you. You must not change clothes until you complete the game, but you may opt to take a COLD shower.</item>
+        <item>Correctly state each of your teammate’s age and birth months. Incorrect birthday for a teammate result in said teammate and card drawer taking a half shot each.</item>
+        <item>Both teams must position themselves as in the picture with final player moving on all fours. Teams then race a predetermined distance, preferably outside. First team to finish wins the card. Losing team must drink a shot each.</item>
+        <item >You must hand your cell phone over to the opposing team. You must watch and listen as the opposing team is given 2 min to send embarrassing text messages to anyone on your contact list excluding bosses and nuclear family members. Each text can only be sent to one person at a time (no mass forwarding). If you complain, ask them to stop, or obstruct the other team in any way you lose. An opposing team member must take a shot for every text sent out.</item>
+        <item>Call your mother (if player is male) or father (if player is female), or oldest child if needed, and either ask for some kind of dating advice or ask for them to set you up with one of their friends children. If the player isxhe player can either pass this off to a single (not in a relationship) team member or ask their mother/father for advice in how to cheat on their current significant other. Mentioning the game or the call is a ruse results in failure of card and player’s entire team must take a shot. The call must last 1 minute, after which hanging up is permissible. The phone must be given to the judge afterwards to prevent explanation until the end of the game.</item>
+        <item>The opposing team has the opportunity to say ANYTHING they want for 2 minutes, but must mix in “intervention themed insults”. Nothing is too far. Anything is in play. Any defending by the drawing team (resist flinching, smiling, crying or cowering) results in losing. Opposing team may steal</item>
+    </string-array>
+
+
+    <string-array name="spirit_deck_image_url">
+        <item>https://c1.staticflickr.com/5/4161/34396037292_ee53b42c33_z.jpg</item>
+        <item>https://c1.staticflickr.com/5/4160/33701974123_2af4faba15.jpg</item>
+        <item>http://survival-mastery.com/wp-content/uploads/2015/05/Take-a-cold-shower.jpg</item>
+        <item>https://images.vice.com/noisey/content-images/article/dealing-with-your-break-up-songs/tobey-maguire-crying.jpg</item>
+        <item>http://2.bp.blogspot.com/__SQjZDWNNOA/ShIao8gKfMI/AAAAAAAAABI/wR1VxQH3O8U/S1600-R/amory_josh.jpg</item>
+        <item>https://uproxx.files.wordpress.com/2013/01/tumblr_mgxz9wuaus1qz7wfjo1_1280.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Drill_instructor_at_the_Officer_Candidate_School.jpg/320px-Drill_instructor_at_the_Officer_Candidate_School.jpg<!--CC0--></item>
+        <item>https://c1.staticflickr.com/3/2876/34010245760_8f2e5c6446_b.jpg</item><!--no attribution needed-->
+        <item>https://farm3.staticflickr.com/2843/33906000450_c9717dd2bb_b.jpg</item><!--no attribution needed-->
+        <item>https://c1.staticflickr.com/5/4175/34353379486_8b4c6fc197_z.jpg</item><!--no attribution needed-->
+        <item>https://c1.staticflickr.com/5/4158/34329888692_5d914b89e6_z.jpg</item><!-- no attribution needed-->
+        <item>https://c1.staticflickr.com/3/2835/33553964674_fe0ee3c043_z.jpg</item><!-- no attribution needed-->
+        <item>https://c1.staticflickr.com/5/4183/34395967475_b1043e40bf_b.jpg</item><!-- no attribution needed-->
+        <item>https://c1.staticflickr.com/3/2893/34237135362_5750bae0c9_z.jpg</item><!-- no attribution needed-->
+    </string-array>
+
+    <string-array name="spirit_deck_supplies">
+        <item></item>
+        <item></item>
+        <item>shower</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="spirit_deck_attribute">
+        <item>Alipourvaghar</item><!-- Challenge Accepted -->
+        <item>Kimberly Smith</item><!-- Air Blowjob -->
+        <item>Unknown</item><!-- Cold Shower -->
+        <item>Toby McGuire from Spiderman</item><!-- Cry -->
+        <item>Unknown</item><!-- Interpretative Dance -->
+        <item>Unknown</item><!-- Dick Face -->
+        <item>Public Domain</item><!-- Emotional Beratement -->
+        <item>Public Domain</item><!-- Facebook Fail --> <!--no attribution needed-->
+        <item>Benjamin Voros</item><!-- Golden Shower --> <!--no attribution needed-->
+        <item>Public Domain</item><!-- Happy Birthday! --> <!--no attribution needed-->
+        <item>Public Domain</item><!-- Human Centipede --> <!-- no attribution needed-->
+        <item>Public Domain</item><!-- Identity Theft --> <!-- no attribution needed-->
+        <item>Public Domain</item><!-- I'm Sorry Mom --> <!-- no attribution needed-->
+        <item>Public Domain</item><!-- Intervention --> <!-- no attribution needed-->
+    </string-array>
+
+
+</resources>

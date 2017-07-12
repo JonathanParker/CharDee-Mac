@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/card_shape"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/previewCardImage"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/card_back_body"/>
+    </FrameLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top|center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/previewTitleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="TITLE TEXT"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+            <ScrollView
+                android:id="@+id/previewDescriptionScroll"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/previewTitleText"
+                android:layout_above="@id/fabGroup">
+
+                <TextView
+                    android:id="@+id/previewCardText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:padding="4dp"
+                    android:textColor="#787878"
+                    android:textSize="20sp"
+                    tools:text="sample description sample description sample description sample description sample description sample description sample description sample description sample description sample description sample description sample description sample description sample description sample description sample description sample description sample description sample description sample description sample description sample description sample description " />
+
+            </ScrollView>
+
+        </RelativeLayout>
+
+
+</LinearLayout>

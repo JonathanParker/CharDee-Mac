@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.game.jason.chardeemacdennis20170417.MainActivity"
+    android:fitsSystemWindows="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/optimized_table_top_drinks4"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/main_title_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:keepScreenOn="true"
+                android:text="@string/chardee_macdennis"
+                android:textColor="#FFFFFF"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp">
+
+                    <Button
+                        android:id="@+id/start_lite_button"
+                        style="?metaButtonBarButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#40ffffff"
+                        android:onClick="onSetupLiteClick"
+                        android:text="@string/express_game"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_margin="5dp"/>
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:onClick="onExpressInfoClick"
+                        android:scaleType="center"
+                        android:layout_alignBottom="@id/start_lite_button"
+                        android:layout_alignEnd="@id/start_lite_button"
+                        app:backgroundTint="#80000000"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp">
+
+                    <Button
+                        android:id="@+id/start_full_button"
+                        style="?metaButtonBarButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#40ffffff"
+                        android:onClick="onStartSetupFullClick"
+                        android:text="@string/full_game"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_margin="5dp"/>
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:onClick="onFullInfoClick"
+                        android:scaleType="center"
+                        android:layout_alignBottom="@id/start_full_button"
+                        android:layout_alignEnd="@id/start_full_button"
+                        app:backgroundTint="#80000000"/>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Players: "
+                android:layout_marginEnd="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                />
+
+            <com.game.jason.chardeemacdennis20170417.NumberPicker
+                android:id="@+id/player_NP"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/menu_button"
+        android:onClick="onMenuClick"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="center"
+        android:src="@drawable/dots_vertical"
+        android:tint="#ffffff"
+        app:backgroundTint="#80000000"  />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="end|top">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/mainVolumeToggle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:elevation="8dp"
+            android:onClick="onSoundToggleClick"
+            android:padding="5dp"
+            android:src="@drawable/volume_on"
+            android:tint="#ffffff"
+            app:backgroundTint="#80000000"
+            app:fabSize="mini" />
+
+    </LinearLayout>
+</FrameLayout>

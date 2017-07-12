@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:padding="5dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:text="Pre-Game Setup"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:drawableBottom="@color/light_gray"/>
+
+            <TextView
+                android:id="@+id/playersShouldBringTV"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:paddingTop="20dp"
+                android:text="Each Player should bring"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/bottleOfWineCB"
+                android:buttonTint="@color/light_gray"
+                android:textColor="@color/light_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:paddingTop="10dp"
+                android:text="Wine (750 mL)"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/sixPackOfBeerCB"
+                android:buttonTint="@color/light_gray"
+                android:textColor="@color/light_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:paddingTop="10dp"
+                android:text="Beer (6 bottles)"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/hardAlcoholCB"
+                android:buttonTint="@color/light_gray"
+                android:textColor="@color/light_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:paddingTop="10dp"
+                android:text="Liquor (375 mL)"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/actionFigureCB"
+                android:buttonTint="@color/light_gray"
+                android:textColor="@color/light_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:paddingTop="10dp"
+                android:text="Doll of Self (optional)"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onTldrRulesClick"
+
+                    android:text="tldr Rules"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onShowRulesClick"
+                    android:text="Full Rules"/>
+
+                <Button
+                    android:id="@+id/next_button_setup"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onPickJudgeClick"
+                    android:backgroundTint="#58993c"
+                    android:text="Next" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
