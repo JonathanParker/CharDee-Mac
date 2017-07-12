@@ -8,7 +8,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Main Screen"
+        android:text="@string/new_game"
         android:onClick="onMainScreenClick"
         />
     <Button
@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:text="Rules"
         android:onClick="onShowRulesClick"/>
-<!--    <Button
+<!--    for dev only - <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:alpha="0"

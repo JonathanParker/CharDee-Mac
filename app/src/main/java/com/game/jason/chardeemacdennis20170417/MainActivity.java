@@ -282,7 +282,7 @@ public class MainActivity extends AppCompatActivity{
 
     /*-----     Start Game Buttons start     -----*/
     /* go to pre-game setup */
-    private void onStartSetupFullClick(View view) {
+    public void onStartSetupFullClick(View view) {
         playerNumberEdit = (NumberPicker) findViewById(R.id.player_NP);
         playerNumberValue = String.valueOf(playerNumberEdit.getValue());
         AlertDialog.Builder mBuilder = new AlertDialog.Builder(MainActivity.this);

@@ -188,7 +188,6 @@ public class DeckActivity extends AppCompatActivity {
         }
     }
 
-
     public void onSpiritDeckClick(View view) {
         setUpToGoToNextActivity(goToCards);
 
@@ -219,6 +218,14 @@ public class DeckActivity extends AppCompatActivity {
             FloatingActionButton flashButtonOn = (FloatingActionButton) findViewById(R.id.deckVolumeToggle);
             flashButtonOn.setImageResource(R.drawable.volume_off);
         }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mAdView.pause();
+        mAdView.destroy();
+
     }
 
     public void onSoundToggleClick(View view) {
