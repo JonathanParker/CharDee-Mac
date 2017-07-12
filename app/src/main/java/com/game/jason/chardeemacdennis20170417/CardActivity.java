@@ -210,18 +210,18 @@ public class CardActivity extends AppCompatActivity {
 
     private class ViewHolder {
         public FrameLayout background;
-        public TextView DataText;
-        public TextView titleText;
-        public ImageView cardImage;
-        public FloatingActionButton trashButton;
-        public FloatingActionButton keepButton;
-        public FloatingActionButton removeButton;
+        TextView DataText;
+        TextView titleText;
+        ImageView cardImage;
+        FloatingActionButton trashButton;
+        FloatingActionButton keepButton;
+        FloatingActionButton removeButton;
     }
 
-    public class MyAppAdapter extends BaseAdapter {
+    class MyAppAdapter extends BaseAdapter {
 
-        public List<Data> parkingList;
-        public Context context;
+        List<Data> parkingList;
+        Context context;
 
         private MyAppAdapter(List<Data> apps, Context context) {
             this.parkingList = apps;
