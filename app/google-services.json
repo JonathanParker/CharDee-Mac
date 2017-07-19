@@ -1,35 +1,43 @@
 {
   "project_info": {
-    "project_number": "763868108928",
-    "firebase_url": "https://chardee-macdennis-b9e82.firebaseio.com",
-    "project_id": "chardee-macdennis-b9e82",
-    "storage_bucket": "chardee-macdennis-b9e82.appspot.com"
+    "project_number": "107584594354",
+    "firebase_url": "https://cdmac-3bbac.firebaseio.com",
+    "project_id": "cdmac-3bbac",
+    "storage_bucket": "cdmac-3bbac.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:763868108928:android:bb18c4427987d840",
+        "mobilesdk_app_id": "1:107584594354:android:fa02a9121120f784",
         "android_client_info": {
           "package_name": "com.game.jason.chardeemacdennis20170417"
         }
       },
       "oauth_client": [
         {
-          "client_id": "763868108928-l5bkhmt794r2i7brokobko7mhsug2eti.apps.googleusercontent.com",
+          "client_id": "107584594354-8tb36edu74kv682t23snojimpkgq7ia7.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.game.jason.chardeemacdennis20170417",
-            "certificate_hash": "9a26eaa2248b60cab95105f9a4468aab748fadfa"
+            "certificate_hash": "7ad7157eb25f34eeb4b7c8a3e8376c4c8858d61f"
           }
         },
         {
-          "client_id": "763868108928-jagiilntaqhnvhsa4g7mq37ael73f3jc.apps.googleusercontent.com",
+          "client_id": "107584594354-b0giefu0il9bcibfatmdnj70qv76croq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.game.jason.chardeemacdennis20170417",
+            "certificate_hash": "601a33478db77dda7933a1c96e25cff98ccc77e8"
+          }
+        },
+        {
+          "client_id": "107584594354-o30v8fto2lkrjni08ll1d704i4j0lo8v.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAis5oz4fm6AxVZ9KLjQn4VCogcUsFvgu4"
+          "current_key": "AIzaSyC-_AYHMk01p-XmM4XYP43epg7pCphmyxQ"
         }
       ],
       "services": {
@@ -40,7 +48,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "763868108928-jagiilntaqhnvhsa4g7mq37ael73f3jc.apps.googleusercontent.com",
+              "client_id": "107584594354-o30v8fto2lkrjni08ll1d704i4j0lo8v.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
