@@ -6,13 +6,13 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
+    <!--android:name=".LeakCanarySetup"-->
     <application
         android:allowBackup="true"
+        android:largeHeap="true"
         android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_main"
         android:label="@string/app_name"
-        android:largeHeap="true"
-        android:name=".LeakCanarySetup"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
