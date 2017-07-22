@@ -49,11 +49,6 @@ public class CardActivity extends AppCompatActivity {
     private  Intent goToMain;
     public Boolean continueMusic = true;
     private Boolean exit = false;
-    /*use for adding card add functionality*/
-//    EditText title;
-//    EditText description;
-//    EditText imageURL;
-//    RadioGroup deckTypeRGroup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -352,6 +352,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="onPickJudgeClick"
+                android:backgroundTint="#58993c"
                 android:text="Next" />
 
 
