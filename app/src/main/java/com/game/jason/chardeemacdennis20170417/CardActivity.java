@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v4.app.FragmentContainer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -67,6 +68,7 @@ public class CardActivity extends AppCompatActivity {
         decorView.setSystemUiVisibility(uiOptions);
         setVariables();
 
+//        container = (FragmentContainer) findViewById(R.id.frame);
         flingContainer = (SwipeFlingAdapterView) findViewById(R.id.frame);
         myAppAdapter = new MyAppAdapter(deck, CardActivity.this);
         flingContainer.setAdapter(myAppAdapter);
@@ -85,12 +87,12 @@ public class CardActivity extends AppCompatActivity {
 
             @Override
             public void onLeftCardExit(Object dataObject) {
-                onBluePlusOne();
+//                onBluePlusOne();
             }
 
             @Override
             public void onRightCardExit(Object dataObject) {
-                redPlusOne();
+//                redPlusOne();
             }
 
             @Override
@@ -101,14 +103,14 @@ public class CardActivity extends AppCompatActivity {
             @Override
             public void onScroll(float scrollProgressPercent) {
 
-                View view = flingContainer.getSelectedView();
-                view.findViewById(R.id.background).setAlpha(0);
-                view.findViewById(R.id.item_swipe_right_indicator).setAlpha(scrollProgressPercent < 0 ? -scrollProgressPercent : 0);
-                view.findViewById(R.id.item_swipe_left_indicator).setAlpha(scrollProgressPercent > 0 ? scrollProgressPercent : 0);
+//                View view = flingContainer.getSelectedView();
+//                view.findViewById(R.id.background).setAlpha(0);
+//                view.findViewById(R.id.item_swipe_right_indicator).setAlpha(scrollProgressPercent < 0 ? -scrollProgressPercent : 0);
+//                view.findViewById(R.id.item_swipe_left_indicator).setAlpha(scrollProgressPercent > 0 ? scrollProgressPercent : 0);
             }
         });
 
-        // Optionally add an OnItemClickListener
+//         Optionally add an OnItemClickListener
         flingContainer.setOnItemClickListener(new SwipeFlingAdapterView.OnItemClickListener() {
             @Override
             public void onItemClicked(int itemPosition, Object dataObject) {
@@ -119,11 +121,6 @@ public class CardActivity extends AppCompatActivity {
                 myAppAdapter.notifyDataSetChanged();
             }
         });
-
-        if(!gameHasStarted) {
-            RelativeLayout turnExpRL = (RelativeLayout) findViewById(R.id.try_swiping_container_RL);
-            turnExpRL.setVisibility(View.VISIBLE);
-        }
 
         gameHasStarted = true;
     }
@@ -196,11 +193,6 @@ public class CardActivity extends AppCompatActivity {
             startActivity(goToDeck);
             finish();
         }
-    }
-
-    public void onSwipingInfoRemoveClick(View view) {
-        RelativeLayout turnExpRL = (RelativeLayout) findViewById(R.id.try_swiping_container_RL);
-        turnExpRL.setVisibility(View.INVISIBLE);
     }
 
     private class ViewHolder {

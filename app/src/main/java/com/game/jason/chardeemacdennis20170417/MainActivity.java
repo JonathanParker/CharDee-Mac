@@ -195,9 +195,10 @@ public class MainActivity extends AppCompatActivity{
         mBuilder.setView(mView);
         AlertDialog dialog = mBuilder.create();
         dialog.show();
-        Toast.makeText(MainActivity.this,
-                "Once the games starts, there will be on bathroom breaks unless a time out is used. See rules for more detail.",
-                Toast.LENGTH_LONG).show();
+        /*--- implement this when you have bathroom timeouts ---*/
+//        Toast.makeText(MainActivity.this,
+//                "Once the games starts, there will be on bathroom breaks unless a time out is used. See rules for more detail.",
+//                Toast.LENGTH_LONG).show();
         expressGame = false;
     }
     /* go to tldr rules */
@@ -217,9 +218,10 @@ public class MainActivity extends AppCompatActivity{
         mBuilder.setView(mView);
         AlertDialog dialog = mBuilder.create();
         dialog.show();
-        Toast.makeText(MainActivity.this,
-                "Use the restroom before starting!",
-                Toast.LENGTH_LONG).show();
+        /*--- implement this when you have bathroom timeouts ---*/
+//        Toast.makeText(MainActivity.this,
+//                "Use the restroom before starting!",
+//                Toast.LENGTH_LONG).show();
         expressGame = true;
     }
     /* go to deck activity */

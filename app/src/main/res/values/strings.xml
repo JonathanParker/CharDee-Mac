@@ -148,7 +148,7 @@
     </string-array>
 
     <string-array name="body_deck_title">
-        <item>Puppy Bowl</item><!-- fix: slow load-->
+        <item>Puppy Bowl</item>
         <item>Arm wrestling</item><!-- fix: no copy right -->
         <item>Home-made Carousel</item>
         <item>Beer Run</item>
@@ -166,11 +166,12 @@
         <item>Jalapeños Poppers</item>
         <item>Milk Chug</item>
         <item>Hungry Hungry Hippo</item>
+        <item>Plank Wars</item>
     </string-array>
 
     <string-array name="body_deck_description">
         <item>I hope you like puppies because now you are about to be a puppy!  The drawer and a member from the opposing team of the judges choosing will have to drink a beer from a bowl that is placed on the floor.  The first person to finish will win this card.  The last person to finish will have to replace their facebook profile picture with a picture of a sad pug.  Bone Appetit</item>
-        <item>Player who selects this card must arm wrestle a player from the opposing team of their own selection. If player is successful, player may elect to steal a card (loss of card may drop a team into a lower level) OR force the entire opposing team to consume a full beer each.</item>
+        <item>The player who selects this card must arm wrestle a player from the opposing team of their own selection. If player is successful, player may elect to steal a card (loss of card may drop a team into a lower level) OR force the entire opposing team to consume a full beer each.</item>
         <item>A player is selected from each team. Each one of these players will spin in a circle, last one standing gets the card. Players on the sidelines can shout “faster” and both players must comply. Losing player does not have to drink but must select a teammate to drink a full beer for them.</item>
         <item>Whoever pulls this card may designate an opponent of their choosing. The chosen opponent must shotgun a beer, and then run around the block. If they can complete the run without vomiting, or spewing foam, they win the card. Losing team must consume a full beer each including the runner.</item>
         <item>Team who pulls card goes first. They pick a number of beers they think their team can drink in 3 minutes. Opposing team can bid higher. Whoever bids the highest must drink that number of beers in 3 minutes. Failure to do so allows opposing team to attempt their lower bid. Failure to do so means nobody wins the card. Celine Dion, The Power of Love will be played in the background on repeat.</item>
@@ -187,6 +188,7 @@
         <item>The card drawer and an elected member from the opposing team must each pieces of fresh jalapenos, 1 piece every 30 seconds. Between each piece the contenders must rub their eyes. Whoever eats the most wins.  If the card drawer wins, his/her team gets the point, or else no one gets the point. No steals.</item>
         <item>Each team elects a champion to chug a half gallon of milk.  Winner gets the point.</item>
         <item>Each team elects a champion to participate.  The participants must get as many grapes into their mouths as possible on 45 seconds without damaging or swallowing them.  The winning team gets the point. Oh, did I mention no hands allowed?</item>
+        <!--<item>The player who selects this card and an opponent of his/her choosing will go head to head in a plank contest. The one who can hold a plank the longest wins.</item>-->
     </string-array>
 
     <string-array name="body_deck_supplies">
@@ -226,9 +228,9 @@
         <item>https://c1.staticflickr.com/5/4146/4975296555_bd1050daa6_b.jpg<!--/*attribution https://www.flickr.com/photos/42787780@N04/4975296555, https://creativecommons.org/licenses/by/2.0/ --></item>
         <item>https://c1.staticflickr.com/3/2810/34248916196_16a26bfe4d_z.jpg</item>
         <item>https://c1.staticflickr.com/5/4187/33457481583_0d6101a834_k.jpg</item>
-        <item>https://c1.staticflickr.com/5/4326/35252687314_d74dc7a51c_z.jpg</item>
+        <item>https://c1.staticflickr.com/5/4326/35252687314_d74dc7a51c_z.jpg</item><!-- jalapenos-->
         <item>https://c1.staticflickr.com/5/4293/35252908204_b4c6e4ee8b_z.jpg</item><!-- milk chug -->
-        <item>https://c1.staticflickr.com/5/4330/35253379984_9e2821615f_b.jpg</item>
+        <item>https://c1.staticflickr.com/5/4330/35253379984_9e2821615f_b.jpg</item><!-- Hungry Hungry Hippos -->
     </string-array>
 
     <string-array name="body_deck_attribute">
@@ -249,7 +251,7 @@
         <item>Jason Hu</item><!-- Flip Flip Flipadelphia -->
         <item>Public Domain</item><!-- Jalapenos Poppers -->
         <item>Public Domain</item><!-- milk chug -->
-        <item>DeverKid</item><!-- Hungry Hungry Hippo -->
+        <item>DenverKid</item><!-- Hungry Hungry Hippo -->
     </string-array>
 
 
