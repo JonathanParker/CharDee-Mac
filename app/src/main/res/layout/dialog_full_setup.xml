@@ -113,21 +113,21 @@
                 android:paddingEnd="5dp"
                 android:paddingStart="5dp"
                 android:paddingTop="10dp"
-                android:text="Hot peppers (4 jalapenos and 2 habaneros)"
+                android:text="3 jalapeños"
                 android:textSize="20sp" />
 
-            <CheckBox
-                android:id="@+id/pingPongCB"
-                android:buttonTint="@color/light_gray"
-                android:textColor="@color/light_gray"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:paddingEnd="5dp"
-                android:paddingStart="5dp"
-                android:paddingTop="10dp"
-                android:text="Ping pong balls"
-                android:textSize="20sp" />
+            <!--<CheckBox-->
+                <!--android:id="@+id/pingPongCB"-->
+                <!--android:buttonTint="@color/light_gray"-->
+                <!--android:textColor="@color/light_gray"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="10dp"-->
+                <!--android:paddingEnd="5dp"-->
+                <!--android:paddingStart="5dp"-->
+                <!--android:paddingTop="10dp"-->
+                <!--android:text="Ping pong balls"-->
+                <!--android:textSize="20sp" />-->
 
 
             <CheckBox
@@ -168,7 +168,7 @@
                 android:paddingEnd="5dp"
                 android:paddingStart="5dp"
                 android:paddingTop="10dp"
-                android:text="A lot of milk"
+                android:text="2 half gallon of milk"
                 android:textSize="20sp" />
 
 
@@ -186,102 +186,102 @@
                 android:textSize="20sp" />
 
 
-            <CheckBox
-                android:id="@+id/bagOfIceCB"
-                android:buttonTint="@color/light_gray"
-                android:textColor="@color/light_gray"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:paddingEnd="5dp"
-                android:paddingStart="5dp"
-                android:paddingTop="10dp"
-                android:text="Bag of ice"
-                android:textSize="20sp" />
+            <!--<CheckBox-->
+                <!--android:id="@+id/bagOfIceCB"-->
+                <!--android:buttonTint="@color/light_gray"-->
+                <!--android:textColor="@color/light_gray"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="10dp"-->
+                <!--android:paddingEnd="5dp"-->
+                <!--android:paddingStart="5dp"-->
+                <!--android:paddingTop="10dp"-->
+                <!--android:text="Bag of ice"-->
+                <!--android:textSize="20sp" />-->
 
 
-            <CheckBox
-                android:id="@+id/pantyhoseCB"
-                android:buttonTint="@color/light_gray"
-                android:textColor="@color/light_gray"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:paddingEnd="5dp"
-                android:paddingStart="5dp"
-                android:paddingTop="10dp"
-                android:text="Pantyhose"
-                android:textSize="20sp" />
+            <!--<CheckBox-->
+                <!--android:id="@+id/pantyhoseCB"-->
+                <!--android:buttonTint="@color/light_gray"-->
+                <!--android:textColor="@color/light_gray"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="10dp"-->
+                <!--android:paddingEnd="5dp"-->
+                <!--android:paddingStart="5dp"-->
+                <!--android:paddingTop="10dp"-->
+                <!--android:text="Pantyhose"-->
+                <!--android:textSize="20sp" />-->
 
 
-            <CheckBox
-                android:id="@+id/bathRobeCB"
-                android:buttonTint="@color/light_gray"
-                android:textColor="@color/light_gray"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:paddingEnd="5dp"
-                android:paddingStart="5dp"
-                android:paddingTop="10dp"
-                android:text="Bath robe"
-                android:textSize="20sp" />
+            <!--<CheckBox-->
+                <!--android:id="@+id/bathRobeCB"-->
+                <!--android:buttonTint="@color/light_gray"-->
+                <!--android:textColor="@color/light_gray"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="10dp"-->
+                <!--android:paddingEnd="5dp"-->
+                <!--android:paddingStart="5dp"-->
+                <!--android:paddingTop="10dp"-->
+                <!--android:text="Bath robe"-->
+                <!--android:textSize="20sp" />-->
 
 
-            <CheckBox
-                android:id="@+id/bananaCB"
-                android:buttonTint="@color/light_gray"
-                android:textColor="@color/light_gray"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:paddingEnd="5dp"
-                android:paddingStart="5dp"
-                android:paddingTop="10dp"
-                android:text="Banana"
-                android:textSize="20sp" />
+            <!--<CheckBox-->
+                <!--android:id="@+id/bananaCB"-->
+                <!--android:buttonTint="@color/light_gray"-->
+                <!--android:textColor="@color/light_gray"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="10dp"-->
+                <!--android:paddingEnd="5dp"-->
+                <!--android:paddingStart="5dp"-->
+                <!--android:paddingTop="10dp"-->
+                <!--android:text="Banana"-->
+                <!--android:textSize="20sp" />-->
 
 
-            <CheckBox
-                android:id="@+id/limeCB"
-                android:buttonTint="@color/light_gray"
-                android:textColor="@color/light_gray"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:paddingEnd="5dp"
-                android:paddingStart="5dp"
-                android:paddingTop="10dp"
-                android:text="Lime"
-                android:textSize="20sp" />
+            <!--<CheckBox-->
+                <!--android:id="@+id/limeCB"-->
+                <!--android:buttonTint="@color/light_gray"-->
+                <!--android:textColor="@color/light_gray"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="10dp"-->
+                <!--android:paddingEnd="5dp"-->
+                <!--android:paddingStart="5dp"-->
+                <!--android:paddingTop="10dp"-->
+                <!--android:text="Lime"-->
+                <!--android:textSize="20sp" />-->
 
 
-            <CheckBox
-                android:id="@+id/marshmellowCB"
-                android:buttonTint="@color/light_gray"
-                android:textColor="@color/light_gray"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:paddingEnd="5dp"
-                android:paddingStart="5dp"
-                android:paddingTop="10dp"
-                android:text="Marshmallows"
-                android:textSize="20sp" />
+            <!--<CheckBox-->
+                <!--android:id="@+id/marshmellowCB"-->
+                <!--android:buttonTint="@color/light_gray"-->
+                <!--android:textColor="@color/light_gray"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="10dp"-->
+                <!--android:paddingEnd="5dp"-->
+                <!--android:paddingStart="5dp"-->
+                <!--android:paddingTop="10dp"-->
+                <!--android:text="Marshmallows"-->
+                <!--android:textSize="20sp" />-->
 
 
-            <CheckBox
-                android:id="@+id/orangeMarkerCB"
-                android:buttonTint="@color/light_gray"
-                android:textColor="@color/light_gray"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:paddingEnd="5dp"
-                android:paddingStart="5dp"
-                android:paddingTop="10dp"
-                android:text="Orange Marker"
-                android:textSize="20sp" />
+            <!--<CheckBox-->
+                <!--android:id="@+id/orangeMarkerCB"-->
+                <!--android:buttonTint="@color/light_gray"-->
+                <!--android:textColor="@color/light_gray"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="10dp"-->
+                <!--android:paddingEnd="5dp"-->
+                <!--android:paddingStart="5dp"-->
+                <!--android:paddingTop="10dp"-->
+                <!--android:text="Orange Marker"-->
+                <!--android:textSize="20sp" />-->
 
             <TextView
                 android:id="@+id/playersShouldBringTV"
@@ -352,6 +352,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="onPickJudgeClick"
+                android:backgroundTint="#58993c"
                 android:text="Next" />
 
 

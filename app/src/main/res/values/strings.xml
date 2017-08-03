@@ -148,7 +148,7 @@
     </string-array>
 
     <string-array name="body_deck_title">
-        <item>Puppy Bowl</item><!-- fix: slow load-->
+        <item>Puppy Bowl</item>
         <item>Arm wrestling</item><!-- fix: no copy right -->
         <item>Home-made Carousel</item>
         <item>Beer Run</item>
@@ -163,11 +163,15 @@
         <item>David &amp; Goliath</item>
         <item>5 Second Categories</item>
         <item>Flip Flip Flipadelphia</item>
+        <item>Jalapeños Poppers</item>
+        <item>Milk Chug</item>
+        <item>Hungry Hungry Hippo</item>
+        <item>Plank Wars</item>
     </string-array>
 
     <string-array name="body_deck_description">
         <item>I hope you like puppies because now you are about to be a puppy!  The drawer and a member from the opposing team of the judges choosing will have to drink a beer from a bowl that is placed on the floor.  The first person to finish will win this card.  The last person to finish will have to replace their facebook profile picture with a picture of a sad pug.  Bone Appetit</item>
-        <item>Player who selects this card must arm wrestle a player from the opposing team of their own selection. If player is successful, player may elect to steal a card (loss of card may drop a team into a lower level) OR force the entire opposing team to consume a full beer each.</item>
+        <item>The player who selects this card must arm wrestle a player from the opposing team of their own selection. If player is successful, player may elect to steal a card (loss of card may drop a team into a lower level) OR force the entire opposing team to consume a full beer each.</item>
         <item>A player is selected from each team. Each one of these players will spin in a circle, last one standing gets the card. Players on the sidelines can shout “faster” and both players must comply. Losing player does not have to drink but must select a teammate to drink a full beer for them.</item>
         <item>Whoever pulls this card may designate an opponent of their choosing. The chosen opponent must shotgun a beer, and then run around the block. If they can complete the run without vomiting, or spewing foam, they win the card. Losing team must consume a full beer each including the runner.</item>
         <item>Team who pulls card goes first. They pick a number of beers they think their team can drink in 3 minutes. Opposing team can bid higher. Whoever bids the highest must drink that number of beers in 3 minutes. Failure to do so allows opposing team to attempt their lower bid. Failure to do so means nobody wins the card. Celine Dion, The Power of Love will be played in the background on repeat.</item>
@@ -181,6 +185,10 @@
         <item>The drawer must compete against the tallest opposing player. Each player has two minutes to do 10 pushups, take a shot of beer and repeat. Whoever completes the most wins the card. In the event of a tie, both players must remain above the ground in a push up position. First to drop any part of their body (including a shirt which may be removed) loses.</item>
         <item>A member of the opposing team (your choice) grabs your nipple and will not let go until you name five of some category, e.g. cereals, pokemon, 90’s band, etc, within five seconds. Females may choose to opt out but a substitute team member must participate.</item>
         <item>Each team lines up on one side of the table and each player has a cup with an equal amount of beer. The start of the line must chug their beer then flip their cup upside down on the table before the next team member can drink. The first team member to have all  players drink and land their cups wins the round and votes off a member of the other team. The same number of cups remain on the table meaning the losing team must consume multiple cups. Game play continues until all players on one team are eliminated. “Whats New Pussycat” by Tom Jones will be playing on repeat in the background.</item>
+        <item>The card drawer and an elected member from the opposing team must each pieces of fresh jalapenos, 1 piece every 30 seconds. Between each piece the contenders must rub their eyes. Whoever eats the most wins.  If the card drawer wins, his/her team gets the point, or else no one gets the point. No steals.</item>
+        <item>Each team elects a champion to chug a half gallon of milk.  Winner gets the point.</item>
+        <item>Each team elects a champion to participate.  The participants must get as many grapes into their mouths as possible on 45 seconds without damaging or swallowing them.  The winning team gets the point. Oh, did I mention no hands allowed?</item>
+        <!--<item>The player who selects this card and an opponent of his/her choosing will go head to head in a plank contest. The one who can hold a plank the longest wins.</item>-->
     </string-array>
 
     <string-array name="body_deck_supplies">
@@ -191,7 +199,7 @@
         <item></item>
         <item></item>
         <item></item>
-        <item>stove</item>
+        <item>stove top</item>
         <item></item>
         <item></item>
         <item></item>
@@ -199,6 +207,9 @@
         <item></item>
         <item></item>
         <item></item>
+        <item>3 jalapeños</item>
+        <item>2 half gallon of milk</item>
+        <item>A LOT of grapes</item>
     </string-array>
 
     <string-array name="body_deck_image_url">
@@ -217,6 +228,9 @@
         <item>https://c1.staticflickr.com/5/4146/4975296555_bd1050daa6_b.jpg<!--/*attribution https://www.flickr.com/photos/42787780@N04/4975296555, https://creativecommons.org/licenses/by/2.0/ --></item>
         <item>https://c1.staticflickr.com/3/2810/34248916196_16a26bfe4d_z.jpg</item>
         <item>https://c1.staticflickr.com/5/4187/33457481583_0d6101a834_k.jpg</item>
+        <item>https://c1.staticflickr.com/5/4326/35252687314_d74dc7a51c_z.jpg</item><!-- jalapenos-->
+        <item>https://c1.staticflickr.com/5/4293/35252908204_b4c6e4ee8b_z.jpg</item><!-- milk chug -->
+        <item>https://c1.staticflickr.com/5/4330/35253379984_9e2821615f_b.jpg</item><!-- Hungry Hungry Hippos -->
     </string-array>
 
     <string-array name="body_deck_attribute">
@@ -235,6 +249,9 @@
         <item>Public Domain<!-- David and Goliath /*attribution https://www.flickr.com/photos/42787780@N04/4975296555, https://creativecommons.org/licenses/by/2.0/ --></item>
         <item>Unknown</item><!--5 second Categories-->
         <item>Jason Hu</item><!-- Flip Flip Flipadelphia -->
+        <item>Public Domain</item><!-- Jalapenos Poppers -->
+        <item>Public Domain</item><!-- milk chug -->
+        <item>DenverKid</item><!-- Hungry Hungry Hippo -->
     </string-array>
 
 
@@ -257,7 +274,7 @@
 
 
     <string-array name="spirit_deck_description">
-        <item>Pick up a stranger (number) in two minutes. Completion get the card. Opposing team may steal.</item>
+        <item>The card drawer must get a stranger\'s number in two minutes. Completion get the card. Opposing team may steal.</item>
         <item>Mime sucking a dick for 60 seconds, then getting a money shot at the end.</item>
         <item>Without removing anything article of clothing including shoes, player must take a cold shower so much as his or her entire body is wet. No towel will be provided other than for player to stand on to catch dripping. No change of clothes until game is complete. Opposing team may steal.</item>
         <item>You have 1 min to produce real tears. If player cannot cry in 1 min they must take a shot.</item>
@@ -280,7 +297,7 @@
         <item>http://survival-mastery.com/wp-content/uploads/2015/05/Take-a-cold-shower.jpg</item>
         <item>https://images.vice.com/noisey/content-images/article/dealing-with-your-break-up-songs/tobey-maguire-crying.jpg</item>
         <item>http://2.bp.blogspot.com/__SQjZDWNNOA/ShIao8gKfMI/AAAAAAAAABI/wR1VxQH3O8U/S1600-R/amory_josh.jpg</item>
-        <item>https://uproxx.files.wordpress.com/2013/01/tumblr_mgxz9wuaus1qz7wfjo1_1280.png</item>
+        <item>https://c1.staticflickr.com/5/4292/35702649070_9046163e78_z.jpg</item>
         <item>https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Drill_instructor_at_the_Officer_Candidate_School.jpg/320px-Drill_instructor_at_the_Officer_Candidate_School.jpg<!--CC0--></item>
         <item>https://c1.staticflickr.com/3/2876/34010245760_8f2e5c6446_b.jpg</item><!--no attribution needed-->
         <item>https://farm3.staticflickr.com/2843/33906000450_c9717dd2bb_b.jpg</item><!--no attribution needed-->
