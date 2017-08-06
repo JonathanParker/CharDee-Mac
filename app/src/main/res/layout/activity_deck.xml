@@ -92,7 +92,7 @@
             android:orientation="horizontal"
             android:layout_marginTop="5dp"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="60dp"
+            android:layout_marginBottom="10dp"
             android:layout_below="@id/deck_row_1"
             >
             <!--   Mind Deck   -->
@@ -101,8 +101,8 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
                 android:background="@drawable/card_back_red1"
                 android:contentDescription="@string/mind_deck_button"
                 android:onClick="onMindDeckClick"
@@ -113,8 +113,8 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
                 android:background="@drawable/card_back_body"
                 android:contentDescription="@string/body_deck_button"
                 android:onClick="onBodyDeckClick"/>
@@ -124,23 +124,14 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
                 android:background="@drawable/card_back_spirit"
                 android:contentDescription="@string/spirit_deck_button"
                 android:onClick="onSpiritDeckClick"/>
 
         </LinearLayout>
 
-        <com.google.android.gms.ads.AdView
-            android:id="@+id/adView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"
-            ads:adSize="BANNER"
-            ads:adUnitId="@string/banner_ad_unit_id">
-        </com.google.android.gms.ads.AdView>
     </RelativeLayout>
 
     <RelativeLayout
@@ -223,6 +214,56 @@
 
 
         </RelativeLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/blue_time_out_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/turn_exp_RL"
+            android:layout_alignTop="@+id/menu_button"
+            android:layout_marginStart="89dp"
+            android:clickable="true"
+            android:backgroundTint="@color/blue_team"
+            android:tint="@color/white"
+            app:fabSize="mini"
+            ads:srcCompat="@drawable/time_out" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:backgroundTint="@color/blue_team"
+            android:tint="@color/white"
+            ads:fabsize="mini"
+            ads:srcCompat="@drawable/time_out"
+            android:layout_alignTop="@+id/blue_time_out_1"
+            android:layout_alignEnd="@+id/blue_time_out_1"
+            android:layout_marginEnd="50dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/red_time_out_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/deckVolumeToggle"
+            android:layout_alignTop="@+id/menu_button"
+            android:layout_marginEnd="85dp"
+            android:clickable="true"
+            android:backgroundTint="@color/red_team"
+            android:tint="@color/white"
+            ads:fabSize="mini"
+            ads:srcCompat="@drawable/time_out" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:backgroundTint="@color/red_team"
+            android:tint="@color/white"
+            ads:fabsize="mini"
+            ads:srcCompat="@drawable/time_out"
+            android:layout_alignTop="@+id/blue_time_out_1"
+            android:layout_alignEnd="@+id/red_time_out_1"
+            android:layout_marginEnd="50dp" />
 
     </RelativeLayout>
 
