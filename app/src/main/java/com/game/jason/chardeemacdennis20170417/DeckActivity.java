@@ -2,6 +2,7 @@ package com.game.jason.chardeemacdennis20170417;
 
 import android.content.ComponentCallbacks2;
 import android.content.Intent;
+import android.os.CountDownTimer;
 import android.os.Environment;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AlertDialog;
@@ -14,15 +15,12 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.MobileAds;
-
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
 import static android.os.Environment.getExternalStoragePublicDirectory;
 
@@ -45,21 +43,16 @@ public class DeckActivity extends AppCompatActivity {
     private ImageButton mindDeckButton;
     private ImageButton bodyDeckButton;
     private ImageButton spiritDeckButton;
+    private String timeOutSelected = "none";
 //    static final int REQUEST_IMAGE_CAPTURE = 1;
 //    private static final int REQUEST_CAMERA = 1;
 //    private static final int SELECT_FILE = 2;
 
-    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_deck);
-
-        //----   load ads   ----//
-        mAdView = (AdView) findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
 
         //----   hide status bar   ----//
         View decorView = getWindow().getDecorView();
@@ -223,8 +216,6 @@ public class DeckActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        mAdView.pause();
-        mAdView.destroy();
 
     }
 
@@ -339,6 +330,79 @@ public class DeckActivity extends AppCompatActivity {
             */
                 break;
         }
+    }
+
+    public void onTimeOutClickBlue1(View view) {
+        timeOutSelected = "BLUE1";
+        timeOutAlert();
+    }
+
+    public void onTimeOutClickBlue2(View view) {
+        timeOutSelected = "BLUE2";
+        timeOutAlert();
+    }
+
+    public void onTimeOutClickRed1(View view) {
+        timeOutSelected = "RED1";
+        timeOutAlert();
+    }
+
+    public void onTimeOutClickRed2(View view) {
+        timeOutSelected = "RED2";
+        timeOutAlert();
+    }
+
+    public void timeOutAlert () {
+        AlertDialog.Builder mBuilder = new AlertDialog.Builder(DeckActivity.this);
+        View mView = getLayoutInflater().inflate(R.layout.time_out,null);
+        mBuilder.setView(mView);
+        AlertDialog dialog = mBuilder.create();
+        dialog.show();
+    }
+
+    public void onTimeOutClick(View view) {
+        AlertDialog.Builder mBuilder = new AlertDialog.Builder(DeckActivity.this);
+        View mView = getLayoutInflater().inflate(R.layout.time_out_countdown,null);
+        mBuilder.setView(mView);
+        AlertDialog dialog = mBuilder.create();
+        dialog.show();
+        startTimer();
+    }
+
+    public void startTimer() {
+        switch (timeOutSelected) {
+            case "BLUE1":
+                FloatingActionButton blueTimeout1 = (FloatingActionButton) findViewById(R.id.blue_time_out_1);
+                blueTimeout1.setVisibility(View.GONE);
+                break;
+            case "BLUE2":
+                FloatingActionButton blueTimeout2 = (FloatingActionButton) findViewById(R.id.blue_time_out_2);
+                blueTimeout2.setVisibility(View.GONE);
+                break;
+            case "RED1":
+                FloatingActionButton redTimeout1 = (FloatingActionButton) findViewById(R.id.red_time_out_1);
+                redTimeout1.setVisibility(View.GONE);
+                break;
+            case "RED2":
+                FloatingActionButton redTimeout2 = (FloatingActionButton) findViewById(R.id.red_time_out_2);
+                redTimeout2.setVisibility(View.GONE);
+                break;
+            default:
+                break;
+        };
+
+        new CountDownTimer(120000, 1000) {
+            final TextView timeoutCounter = (TextView) findViewById(R.id.timeout_timer);
+            public void onTick(long millisUntilFinished) {
+                long seconds = TimeUnit.MILLISECONDS.toSeconds(millisUntilFinished);
+                long minutes = TimeUnit.MILLISECONDS.toMinutes(millisUntilFinished);
+                timeoutCounter.setText("seconds remaining: " + minutes + " : " + seconds);
+            }
+            public void onFinish() {
+                timeoutCounter.setText("done!");
+            }
+        }.start();
+
     }
 }
 
