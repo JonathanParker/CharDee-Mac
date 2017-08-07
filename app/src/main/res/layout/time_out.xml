@@ -28,15 +28,24 @@
             android:textStyle="bold"
             android:textAlignment="center"
             android:drawableBottom="@color/light_gray"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Players can only use the restroom when their team is on timeout"
+            android:textStyle="italic"
+            android:textColor="@color/gray"
+            android:textAlignment="center"/>
         <RelativeLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center">
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="onTimeOutClick"
-                android:text="YES"/>
+                android:backgroundTint="@color/green"
+                android:text="Start"/>
         </RelativeLayout>
 
     </LinearLayout>

@@ -28,16 +28,21 @@
             android:textStyle="bold"
             android:textAlignment="center"
             android:drawableBottom="@color/light_gray"/>
-        <RelativeLayout
-            android:layout_width="wrap_content"
+
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center">
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="onTimeOutClick"
-                android:text="END EARLY"/>
-        </RelativeLayout>
+            android:text="- One player must be drinking at all times if someone is in the bathroom."
+            android:textColor="@color/white"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tap outside to end early."
+            android:textStyle="italic"
+            android:textColor="@color/gray"
+            android:textAlignment="center"/>
 
     </LinearLayout>
 

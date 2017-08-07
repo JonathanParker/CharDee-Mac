@@ -29,6 +29,7 @@
     <string name="split_into_2_teams">Split into 2 teams</string>
     <string name="start">Start</string>
     <string name="new_game">New Game</string>
+    <string name="time_out_used">Time out already used!</string>
 
 
     <string-array name="mind_deck_title">

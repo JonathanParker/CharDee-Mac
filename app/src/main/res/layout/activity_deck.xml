@@ -154,9 +154,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="10dp"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="20dp"
             android:layout_below="@id/deck_row_1"
             >
             <!--   Mind Deck   -->

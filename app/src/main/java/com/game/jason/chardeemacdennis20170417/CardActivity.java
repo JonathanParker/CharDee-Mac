@@ -36,16 +36,18 @@ public class CardActivity extends AppCompatActivity {
     public ViewHolder viewHolder;
     private SwipeFlingAdapterView flingContainer;
     private ArrayList deck;
-    int blueScore;
-    int redScore;
-    ArrayList mindDeck;
-    ArrayList bodyDeck;
-    ArrayList spiritDeck;
-    String teamThatsUp;
-    int playerNumber;
-    int teamScore;
-    Boolean gameHasStarted;
-    String enabledDeck;
+    private int blueScore;
+    private int redScore;
+    private int blueTimeOuts;
+    private int redTimeOuts;
+    private ArrayList mindDeck;
+    private ArrayList bodyDeck;
+    private ArrayList spiritDeck;
+    private String teamThatsUp;
+    private int playerNumber;
+    private int teamScore;
+    private Boolean gameHasStarted;
+    private String enabledDeck;
     private Intent goToDeck;
     private  Intent goToMain;
     public Boolean continueMusic = true;
@@ -135,6 +137,8 @@ public class CardActivity extends AppCompatActivity {
         playerNumber = this.getIntent().getIntExtra("playerNumber",0);
         blueScore = getIntent().getIntExtra("blueScore",0);
         redScore = getIntent().getIntExtra("redScore",0);
+        blueTimeOuts = this.getIntent().getIntExtra("blueTimeOuts",2);
+        redTimeOuts = this.getIntent().getIntExtra("redTimeOuts",2);
         gameHasStarted = getIntent().getBooleanExtra("gameHasStarted", false);
     }
     public void onAutoAdvanceClick(View view) {
@@ -297,6 +301,8 @@ public class CardActivity extends AppCompatActivity {
         intent.putExtra(enabledDeck,deck);
         intent.putExtra("blueScore", blueScore);
         intent.putExtra("redScore", redScore);
+        intent.putExtra("blueTimeOuts", blueTimeOuts);
+        intent.putExtra("redTimeOuts", redTimeOuts);
         intent.putExtra("continueMusic", continueMusic);
         intent.putExtra("gameHasStarted", gameHasStarted);
     }

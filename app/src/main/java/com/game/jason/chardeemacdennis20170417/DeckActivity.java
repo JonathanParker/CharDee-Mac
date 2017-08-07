@@ -44,6 +44,11 @@ public class DeckActivity extends AppCompatActivity {
     private ImageButton bodyDeckButton;
     private ImageButton spiritDeckButton;
     private String timeOutSelected = "none";
+    private TextView timeoutCounter;
+    private int blueTimeOuts;
+    private int redTimeOuts;
+    private boolean blueTimeOutTriggered = false;
+    private boolean redTimeOutTriggered = false;
 //    static final int REQUEST_IMAGE_CAPTURE = 1;
 //    private static final int REQUEST_CAMERA = 1;
 //    private static final int SELECT_FILE = 2;
@@ -105,6 +110,8 @@ public class DeckActivity extends AppCompatActivity {
         spiritDeck = this.getIntent().getExtras().getParcelableArrayList("spiritDeck");
         blueScore = this.getIntent().getIntExtra("blueScore",0);
         redScore = this.getIntent().getIntExtra("redScore",0);
+        blueTimeOuts = this.getIntent().getIntExtra("blueTimeOuts",2);
+        redTimeOuts = this.getIntent().getIntExtra("redTimeOuts",2);
         teamThatsUp = this.getIntent().getStringExtra("teamThatsUp");
         playerNumber = this.getIntent().getIntExtra("playerNumber",4);
         gameHasStarted = this.getIntent().getBooleanExtra("gameHasStarted", false);
@@ -134,6 +141,24 @@ public class DeckActivity extends AppCompatActivity {
             teamScore = blueScore;
             redScoreLayout.setAlpha(disabledOpaque);
         }
+
+        /*---  TimeOuts  ---*/
+        FloatingActionButton blueTimeOut1 = (FloatingActionButton) findViewById(R.id.blue_time_out_1);
+        FloatingActionButton blueTimeOut2 = (FloatingActionButton) findViewById(R.id.blue_time_out_2);
+        FloatingActionButton redTimeOut1 = (FloatingActionButton) findViewById(R.id.red_time_out_1);
+        FloatingActionButton redTimeOut2 = (FloatingActionButton) findViewById(R.id.red_time_out_2);
+        if(blueTimeOuts <= 1) {
+            blueTimeOut1.setVisibility(View.GONE);
+        }
+        if (blueTimeOuts <= 0) {
+            blueTimeOut2.setVisibility(View.GONE);
+        }
+        if(redTimeOuts <= 1) {
+            redTimeOut1.setVisibility(View.GONE);
+        }
+        if (redTimeOuts <= 0) {
+            redTimeOut2.setVisibility(View.GONE);
+        }
     }
 
     public void setUpToGoToNextActivity(Intent intent){
@@ -146,6 +171,8 @@ public class DeckActivity extends AppCompatActivity {
         intent.putExtra("deckType", enabledDeck);
         intent.putExtra("blueScore", blueScore);
         intent.putExtra("redScore", redScore);
+        intent.putExtra("blueTimeOuts", blueTimeOuts);
+        intent.putExtra("redTimeOuts", redTimeOuts);
         intent.putExtra("continueMusic", continueMusic);
         intent.putExtra("gameHasStarted",gameHasStarted);
     }
@@ -366,43 +393,81 @@ public class DeckActivity extends AppCompatActivity {
         mBuilder.setView(mView);
         AlertDialog dialog = mBuilder.create();
         dialog.show();
+        timeoutCounter = (TextView) dialog.findViewById(R.id.timeout_timer);
         startTimer();
     }
 
     public void startTimer() {
+        TimeOutTimer timeOutTimer = new TimeOutTimer(120000, 1000);
+
         switch (timeOutSelected) {
             case "BLUE1":
+                if(blueTimeOutTriggered) {
+                    timeoutCounter.setText(R.string.time_out_used);
+                    break;
+                }
+                blueTimeOutTriggered= true;
                 FloatingActionButton blueTimeout1 = (FloatingActionButton) findViewById(R.id.blue_time_out_1);
                 blueTimeout1.setVisibility(View.GONE);
+                blueTimeOuts--;
+                timeOutTimer.start();
                 break;
             case "BLUE2":
+                if(blueTimeOutTriggered) {
+                    timeoutCounter.setText(R.string.time_out_used);
+                    break;
+                }
+                blueTimeOutTriggered= true;
                 FloatingActionButton blueTimeout2 = (FloatingActionButton) findViewById(R.id.blue_time_out_2);
                 blueTimeout2.setVisibility(View.GONE);
+                timeOutTimer.start();
+                blueTimeOuts--;
                 break;
             case "RED1":
+                if(redTimeOutTriggered) {
+                    timeoutCounter.setText(R.string.time_out_used);
+                    break;
+                }
+                redTimeOutTriggered= true;
                 FloatingActionButton redTimeout1 = (FloatingActionButton) findViewById(R.id.red_time_out_1);
                 redTimeout1.setVisibility(View.GONE);
+                timeOutTimer.start();
+                redTimeOuts--;
                 break;
             case "RED2":
+                if(redTimeOutTriggered) {
+                    timeoutCounter.setText(R.string.time_out_used);
+                    break;
+                }
+                redTimeOutTriggered= true;
                 FloatingActionButton redTimeout2 = (FloatingActionButton) findViewById(R.id.red_time_out_2);
                 redTimeout2.setVisibility(View.GONE);
+                timeOutTimer.start();
+                redTimeOuts--;
                 break;
             default:
                 break;
         };
 
-        new CountDownTimer(120000, 1000) {
-            final TextView timeoutCounter = (TextView) findViewById(R.id.timeout_timer);
-            public void onTick(long millisUntilFinished) {
-                long seconds = TimeUnit.MILLISECONDS.toSeconds(millisUntilFinished);
-                long minutes = TimeUnit.MILLISECONDS.toMinutes(millisUntilFinished);
-                timeoutCounter.setText("seconds remaining: " + minutes + " : " + seconds);
-            }
-            public void onFinish() {
-                timeoutCounter.setText("done!");
-            }
-        }.start();
 
+    }
+
+    private class TimeOutTimer extends CountDownTimer {
+        private TimeOutTimer(long startTime, long interval) {
+            super(startTime, interval);
+        }
+
+        @Override
+        public void onTick(long millisUntilFinished) {
+            long seconds = TimeUnit.MILLISECONDS.toSeconds(millisUntilFinished) % 60;
+            long minutes = TimeUnit.MILLISECONDS.toMinutes(millisUntilFinished);
+            timeoutCounter.setText("time remaining: " + minutes + ":" + seconds);
+        }
+
+        @Override
+        public void onFinish() {
+            timeoutCounter.setText("TIME'S UP!");
+        }
     }
 }
 
