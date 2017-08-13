@@ -83,6 +83,8 @@
             </LinearLayout>
 
             <android.support.design.widget.FloatingActionButton
+                app:backgroundTint="@color/blue_team"
+                app:fabSize="mini"
                 android:id="@+id/blue_time_out_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -90,15 +92,13 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginEnd="5dp"
                 android:layout_marginTop="5dp"
-                android:clickable="true"
                 android:onClick="onTimeOutClickBlue1"
-                app:rippleColor="@color/colorPrimaryDark"
-                android:backgroundTint="@color/blue_team"
-                android:tint="@color/white"
-                app:fabSize="mini"
-                ads:srcCompat="@drawable/time_out" />
+                ads:srcCompat="@drawable/time_out"
+                android:tint="#ffffff" />
 
             <android.support.design.widget.FloatingActionButton
+                app:backgroundTint="@color/blue_team"
+                app:fabSize="mini"
                 android:id="@+id/blue_time_out_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -106,15 +106,13 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginEnd="10dp"
                 android:layout_marginTop="5dp"
-                android:clickable="true"
                 android:onClick="onTimeOutClickBlue2"
-                app:rippleColor="@color/colorPrimaryDark"
-                android:backgroundTint="@color/blue_team"
-                android:tint="@color/white"
-                app:fabSize="mini"
-                ads:srcCompat="@drawable/time_out" />
+                ads:srcCompat="@drawable/time_out"
+                android:tint="#ffffff" />
 
             <android.support.design.widget.FloatingActionButton
+                app:backgroundTint="@color/red_team"
+                app:fabSize="mini"
                 android:id="@+id/red_time_out_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -122,15 +120,13 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="5dp"
-                android:clickable="true"
                 android:onClick="onTimeOutClickRed1"
-                app:rippleColor="@color/colorPrimaryDark"
-                android:backgroundTint="@color/red_team"
-                android:tint="@color/white"
-                app:fabSize="mini"
-                ads:srcCompat="@drawable/time_out" />
+                ads:srcCompat="@drawable/time_out"
+                android:tint="#ffffff" />
 
             <android.support.design.widget.FloatingActionButton
+                app:backgroundTint="@color/red_team"
+                app:fabSize="mini"
                 android:id="@+id/red_time_out_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -138,13 +134,9 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="5dp"
-                android:clickable="true"
                 android:onClick="onTimeOutClickRed2"
-                app:rippleColor="@color/colorPrimaryDark"
-                android:backgroundTint="@color/red_team"
-                android:tint="@color/white"
-                app:fabSize="mini"
-                ads:srcCompat="@drawable/time_out" />
+                ads:srcCompat="@drawable/time_out"
+                android:tint="#ffffff" />
 
         </RelativeLayout>
 
